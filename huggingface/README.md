@@ -37,8 +37,11 @@ The selected components and their SHA256 values are recorded in the
 - Frozen protocol v1: 292 original split/benchmark ID lists, with byte hashes
   and a description of the different full-corpus, availability and benchmark
   counts. These contain no source captions, motions or model weights.
+- Bandai BVH companion: 3,077 original animation BVH files and 3,077 matching
+  SMPL-derived BVH exports, with explicit stage labels and source/clip mapping.
+  These later SMPL-derived exports are not the original MotionBuilder output.
 
-The two components have different scopes. The protocol IDs refer to all six
+The components have different scopes. The protocol IDs refer to all six
 sources; the Bandai download alone does not reconstruct the full research
 corpus. The previously prepared three-source text archive is not selected for
 this initial hosted release.
@@ -90,6 +93,7 @@ The source creator is Bandai Namco Research Inc. The conversion uses
 [our 2025 processing method](https://github.com/dongran/tempo-changing-music2motion).
 Project code, documentation and the separate protocol-ID material retain their
 MIT notices; the card's data-licence tag does not replace component-specific terms.
+SMPL-Body rig attribution in the BVH view retains its separate CC BY 4.0 terms.
 
 SMPL model weights, blend shapes and characterized target templates are obtained
 separately. Other providers' motions and full annotation corpora are not included.

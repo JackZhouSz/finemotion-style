@@ -35,6 +35,13 @@ Mesh previews use a separately obtained SMPL neutral model with zero shape coeff
 
 Motion parameters, model assets, and software have distinct provenance and license scope. The MIT software license does not override motion-data or model-asset terms.
 
+The Bandai BVH companion preserves native Bandai animation and a separately
+labelled SMPL-cache BVH export. SMPL-Body rig material retains CC BY 4.0 credit
+to the Max Planck Institute for Intelligent Systems under the
+[official body licence](https://smpl.is.tue.mpg.de/bodylicense.html); Bandai
+animation retains CC BY-NC 4.0. No SMPL-Model software, shape blend shapes or
+target FBX/template is included in that companion.
+
 ## Source-scoped text annotations
 
 The selected initial Hugging Face bulk release contains Bandai motion/text and

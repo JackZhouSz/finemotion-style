@@ -18,6 +18,10 @@ and repository revision identify its exact version. See the [dataset card draft]
   original bytes/order and a hash manifest. These contain no source captions or
   motions. They describe membership in the six-source protocol; they do not
   supply the missing source files or a complete source-to-crop conversion ledger.
+- **Bandai BVH companion**: 3,077 original source BVH files and 3,077 matching
+  SMPL-derived BVH animation files, with source/sequence/clip mapping and hashes.
+  The derived view is a later SMPL-cache export, not the historical MotionBuilder
+  output stage. See the [BVH companion guide](BANDAI_BVH_COMPANION.md).
 
 ## Retained staging alternatives
 

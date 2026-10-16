@@ -60,7 +60,24 @@
       "caption_motion_or_model_files": 0,
       "source_scope": "full six-source protocol membership only",
       "terms": "MIT project protocol material; upstream data rights not included"
+    },
+    {
+      "kind": "bandai_bvh_companion",
+      "filename": "finemotion_bandai_bvh_companion_v1_20261016_en.tar.gz",
+      "bytes": 233185636,
+      "sha256": "aa38adb889fec05cf4dd2976bf86b8b94165846061ffdd4bec4d7443e1210fad",
+      "external_download_url": null,
+      "status": "prepared_for_initial_hf_upload",
+      "initial_hf_selected": true,
+      "native_bvh_files": 3077,
+      "smpl_derived_bvh_files": 3077,
+      "unique_source_sequences": 3077,
+      "views_are_alternatives_not_additive": true,
+      "motion_terms": "CC-BY-NC-4.0 Bandai motion",
+      "rig_terms": "CC-BY-4.0 SMPL-Body rig attribution",
+      "derived_stage": "Later SMPL-cache-to-BVH export, not original MotionBuilder export",
+      "all_tar_regular_member_hashes_verified": true
     }
   ],
-  "initial_hosting_plan": "Hugging Face Dataset: Bandai motion/text and separate frozen protocol IDs; other five sources acquired officially and processed locally."
+  "initial_hosting_plan": "Hugging Face Dataset: Bandai motion/text, BVH companion and separate frozen protocol IDs; other five sources acquired officially and processed locally."
 }

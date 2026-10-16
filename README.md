@@ -10,6 +10,8 @@ The benchmark integrates CG motion data from multiple sources, focusing on prese
 
 This repository provides **one complete Bandai Namco conversion example**, source reconstruction code, the text preparation pipeline, and frozen benchmark construction rules. The first hosted release is planned for a Hugging Face **Dataset** repository: Bandai motion and text, plus source-independent frozen protocol ID lists. The other five sources are obtained from their official providers and processed locally. See the [release guide](docs/RELEASE_V1.md) for source scope and the [dataset card draft](huggingface/README.md) for the hosting plan. Download links will be added after upload.
 
+The [Bandai BVH companion](docs/BANDAI_BVH_COMPANION.md) adds original source BVH and the matching SMPL-derived BVH view, with their stages identified separately.
+
 Prepared filenames, byte sizes, SHA256 checksums and selected/deferred release status are recorded in the [archive manifest](release_metadata/release_archives.json). The previously prepared HumanML3D/Motion-X/Bandai text archive is retained as a staging alternative; it is not selected for the first Hugging Face download.
 
 ![Original Bandai BVH and converted SMPL motion](assets/bandai_wave/bandai_bvh_smpl.gif)
