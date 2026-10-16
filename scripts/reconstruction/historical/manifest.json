@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "prepared_for_release_date_jst": "2026-10-16",
-  "role": "Recovered project conversion code: seven byte-identical files, one English-comment/public-filename adaptation and one metadata-loading adaptation.",
+  "role": "Recovered project conversion code: six byte-identical files, one English-comment/public-filename adaptation, one metadata-loading adaptation and one documentation-only visualization clarification.",
   "files": [
     {
       "file": "BVHtoSmpl_LaFAN1.py",
@@ -91,14 +91,16 @@
       "original_filename": "convert_finemotion_smpl_npz_to_humanml3d_vecs.py",
       "historical_project_relative_path": "tools/convert_finemotion_smpl_npz_to_humanml3d_vecs.py",
       "original_source_sha256": "e2de9c845a20212906cfd15a502f08e6cd395d9ad49dfcdcdcbbc2d056c5ba1f",
-      "sha256": "e2de9c845a20212906cfd15a502f08e6cd395d9ad49dfcdcdcbbc2d056c5ba1f",
-      "byte_identity_with_original": true,
+      "sha256": "e5f62f9f28e4886563ca967b57607933bd99fa784789cc94f2bbc8fcef85b1fe",
+      "byte_identity_with_original": false,
       "filename_only_rename": false,
-      "adaptation": null
+      "adaptation": "Documentation-only clarification: the root-trajectory preview is an optional experimental helper unused by current public conversion and dataset-building entrypoints. Executable rendering and motion-processing code unchanged.",
+      "adaptation_kind": "experimental_visualization_docstring_clarification"
     }
   ],
-  "unchanged_byte_snapshots": 7,
+  "unchanged_byte_snapshots": 6,
   "metadata_adaptations": 1,
+  "documentation_only_adaptations": 1,
   "filename_only_renames": 0,
   "attribution": {
     "project_code": "FineMotion processing workspace, copyright Ran Dong; see project LICENSE",
@@ -208,7 +210,7 @@
     },
     {
       "file": "README.md",
-      "line": 21,
+      "line": 23,
       "role": "historical local path placeholder; not a private URL or credential"
     }
   ],

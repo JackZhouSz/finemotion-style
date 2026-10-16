@@ -2,7 +2,7 @@
 
 This directory publishes the recoverable project conversion scripts. It contains code and a hash manifest, **no source motion files, SMPL weights, target FBX/template or third-party implementation tree**. Obtain each source and dependency under its own terms. The verified portable [Bandai example](../../docs/BVH_TO_SMPL.md) remains the worked conversion example.
 
-[`historical/manifest.json`](historical/manifest.json) records original filenames, source hashes, public filenames and any adaptation. Seven files preserve their original bytes. The LaFAN1 retargeter has English comment localization. The common 263 builder has a documented metadata adaptation: the embedded LaFAN1 theme prose is removed and loaded from a user-local map instead. Original private snapshots remain unchanged.
+[`historical/manifest.json`](historical/manifest.json) records original filenames, source hashes, public filenames and any adaptation. Six files preserve their original bytes. The LaFAN1 retargeter has English comment localization. The common 263 builder has a documented metadata adaptation: the embedded LaFAN1 theme prose is removed and loaded from a user-local map instead. The shared converter has a documentation-only clarification of an experimental preview helper. Original private snapshots remain unchanged.
 
 ## Recovered entrypoints
 
@@ -15,6 +15,8 @@ This directory publishes the recoverable project conversion scripts. It contains
 - [`add_motorica_finedance_to_finemotion.py`](historical/add_motorica_finedance_to_finemotion.py): standardize existing SMPL24 caches and reproduce their historical intermediate-rate handling. The earlier stages are documented separately in the [native FineDance converter](../finedance/README.md) and [Motorica source-character walkthrough](../../docs/MOTORICA_TO_SMPL.md).
 - [`build_finemotion_humanml3d263_dataset.py`](historical/build_finemotion_humanml3d263_dataset.py): SMPL forward, 20Hz joints, feature windows, preliminary texts, original ID-based splits and normalization statistics. LaFAN1 inclusion now requires `--lafan-theme-map`.
 - [`convert_finemotion_smpl_npz_to_humanml3d_vecs.py`](historical/convert_finemotion_smpl_npz_to_humanml3d_vecs.py): shared SMPL/joint/263 utilities and an individual-file converter, with optional joint previews.
+
+The shared converter retains `render_joints22_mp4_with_traj_inset` as an optional experimental preview helper: a body-centered skeleton with root XZ travel in a separate 2D inset. Current public conversion and dataset-building entrypoints leave this helper unused; the converter's `--viz` option calls `render_joints22_mp4`. For the maintained release preview with a visible ground reference, follow [RENDERING.md](../../docs/RENDERING.md).
 
 ## Restore the expected layout before using historical scripts
 

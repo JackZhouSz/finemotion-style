@@ -481,9 +481,9 @@ def render_joints22_mp4_with_traj_inset(
     traj_inset_rect: Tuple[float, float, float, float] = (0.64, 0.64, 0.33, 0.33),
 ) -> None:
     """
-    VLM-friendly visualization:
-      - main: stick figure (default body-centered per frame, never leaves view)
-      - inset: root XZ trajectory (keeps content semantics like circle/turn/walk path)
+    Optional experimental preview: body-centered skeleton + 2D root trajectory.
+    Current public conversion and dataset-building entrypoints leave this helper unused.
+    For the maintained ground-reference example, see docs/RENDERING.md.
 
     center_mode:
       - per_frame: subtract root XZ for each frame (best for HF/secondary action visibility)
