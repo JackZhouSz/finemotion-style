@@ -8,3 +8,8 @@ examples/** -text whitespace=cr-at-eol
 *.gif -text
 *.png -text
 *.mp4 -text
+
+# Historical snapshots retain their original trailing blank lines and hashes.
+scripts/text/historical/*.py whitespace=-blank-at-eof
+scripts/reconstruction/historical/*.py whitespace=-blank-at-eof
+scripts/text/semantic_subset_config_v3.py whitespace=-blank-at-eof

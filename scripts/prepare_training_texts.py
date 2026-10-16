@@ -14,6 +14,7 @@ from dataclasses import dataclass, replace
 import hashlib
 import json
 import math
+import os
 from pathlib import Path
 import platform
 import re
@@ -21,7 +22,9 @@ from typing import Any, Optional
 
 
 PROFILES = ("legacy_finemotion", "humanml_reference")
-ID_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_.-]*$")
+WINDOWS_DEVICE_NAMES = {"CON", "PRN", "AUX", "NUL", "CONIN$", "CONOUT$"} | {
+    f"{prefix}{digit}" for prefix in ("COM", "LPT") for digit in "123456789¹²³"
+}
 
 
 class TextFormatError(ValueError):
@@ -39,8 +42,21 @@ class Record:
 
 
 def check_id(clip_id: str) -> None:
-    if not ID_RE.fullmatch(clip_id):
+    # Source IDs can contain commas, parentheses and other ordinary filename
+    # characters. Keep them verbatim: renaming would break motion/split mappings.
+    if (not clip_id or clip_id in (".", "..")
+            or any(c in "/\\" or ord(c) < 32 or ord(c) == 127 for c in clip_id)):
         raise TextFormatError(f"Unsafe clip ID: {clip_id!r}; use a filename stem.")
+    # The output adds '.txt', so a dot at the end of the stem is an internal
+    # dot in the final filename and must not be stripped or rejected.
+    if os.name == "nt" and (
+        any(c in '<>:"|?*' for c in clip_id)
+        or clip_id.split(".", 1)[0].rstrip(" ").upper() in WINDOWS_DEVICE_NAMES
+    ):
+        raise TextFormatError(
+            f"Clip ID {clip_id!r} cannot be a Windows filename; "
+            "export this source on Linux while preserving its original IDs."
+        )
 
 
 def validate_caption(caption: str, origin: str) -> None:

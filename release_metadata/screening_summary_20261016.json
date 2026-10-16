@@ -1,0 +1,61 @@
+{
+  "checked_date_JST": "2026-10-16",
+  "snapshot_unique_clips": 18723,
+  "queue_total": 18723,
+  "complete_at_snapshot": true,
+  "valid_complete_EOS": 18723,
+  "caption_line_count": 37446,
+  "source_clip_counts": {
+    "bandai_30hz": 2676,
+    "lafan1_30hz": 3980,
+    "motorica_30hz": 5423,
+    "finedance_30hz": 6644
+  },
+  "source_line_decisions": {
+    "bandai_30hz": {
+      "K": 4845,
+      "R": 504,
+      "U": 3
+    },
+    "lafan1_30hz": {
+      "U": 517,
+      "K": 5945,
+      "R": 1498
+    },
+    "motorica_30hz": {
+      "K": 10769,
+      "R": 72,
+      "U": 5
+    },
+    "finedance_30hz": {
+      "K": 13043,
+      "U": 222,
+      "R": 23
+    }
+  },
+  "line_decisions": {
+    "K": 34602,
+    "U": 747,
+    "R": 2097
+  },
+  "R_unique_clips": 1543,
+  "U_unique_clips": 565,
+  "R_or_U_unique_clips": 2108,
+  "R_paper_locked_lines": 0,
+  "U_paper_locked_lines": 0,
+  "normalized_padding_responses": 162,
+  "mean_end_to_end_seconds": 12.789422930414672,
+  "source_results_snapshot_sha256": "473909541212a9de0dd6c1d958acc163eedccb8e30921ce3ee1b350244192db8",
+  "source_queue_sha256": "8b710d03998fdbed956011b41d408c69dff5bfd1061aaad9ea8856fbe525b9e7",
+  "scope": "First-pass screen of four newly annotated sources using historical 16-frame video sheets; inherited HumanML3D and Motion-X texts were not included.",
+  "K_meaning": "No clear major error flagged; not independently verified factual accuracy.",
+  "U_meaning": "Unresolved model judgment.",
+  "R_meaning": "Unaccepted revision proposal, not a confirmed annotation error.",
+  "model_proposals_accepted": 0,
+  "independent_targeted_visual_clips_checked": 19,
+  "targeted_sample_is_not_a_corpus_error_rate_estimate": true,
+  "left_right_only_proposed_line_changes": 267,
+  "left_right_clips_checked_with_SMPL_joint_evidence": 3,
+  "checked_side_reversals_refuted_and_original_retained": 3,
+  "whole_corpus_rewrite_or_training_benefit_claimed": false
+}

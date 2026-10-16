@@ -1,0 +1,1028 @@
+{
+  "version": "proposed_usable_view_exclusions_20261016",
+  "applied": false,
+  "source_edits": 0,
+  "model_calls": 0,
+  "binding": "Require exact old text file SHA-256 and selected old line SHA-256 before applying to a new version.",
+  "archival_policy": "Do not edit original_v1, paper-exact locks or frozen split/benchmark files.",
+  "whole_clip_exclusions": 44,
+  "line_only_exclusions": 2,
+  "effective_pool_whole_clip_exclusions": 36,
+  "original_pose69_pool_remains": 59038,
+  "proposed_usable_pose69_pool_after_only_these_whole_clip_exclusions": 59002,
+  "nan_lines_excluded_or_changed_by_this_manifest": 0,
+  "excluded_paper_locked_clips": 0,
+  "records": [
+    {
+      "id": "motionx_clean_30hz__animation__subset_0003__Ways_To_Sit_Marathon_Runner",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__animation__subset_0003__Ways_To_Sit_Marathon_Runner.txt",
+      "old_text_sha256": "d219e456a58a3bb142d36fd26d31c9d1044864f03338cea5c229190a4c30e794",
+      "old_line_sha256_utf8_without_newline": "ada7f4adef4e757477bf1da7145f666245acd7f13b20bf06c767327e8c394dc2",
+      "old_caption": "Sure, I can help you with that! Please provide me with the subject of the sentence and I'll complete the sentence for you.",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt"
+        ],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__animation__subset_0003__Ways_To_Stand_Boy_Band",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__animation__subset_0003__Ways_To_Stand_Boy_Band.txt",
+      "old_text_sha256": "df041728fea9979bba7acb3a271f71de9c05b5dd4f1780057052be7baeec71c9",
+      "old_line_sha256_utf8_without_newline": "df3ee2ca8a71ecdb7639d2ae648d1c4a4437f5201606da14515d36a2a978bb23",
+      "old_caption": "Input: The subject of the sentence is \"a guy,\" so the complete sentence would be: \"A guy\" is a term used to refer to a male individual, and can be used in various contexts to describe a specific person or a more general group of people.",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": false,
+        "training_pose69_split": null,
+        "base263_split": "train",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__fitness__subset_0008__Knee_Tuck_Jump_To_Spl_It_Souat_R_clip_22",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__fitness__subset_0008__Knee_Tuck_Jump_To_Spl_It_Souat_R_clip_22.txt",
+      "old_text_sha256": "1edf18b4fb9cb8a21fc62300c86d22d479e90397c81b5178ef715576f43fb7c2",
+      "old_line_sha256_utf8_without_newline": "b93c91d35831b1eadc04802452a5f119eb9b53946ab7dd4592a558af9546bc2b",
+      "old_caption": "I apologize, but I cannot provide an output for this input as it is not clear what you are asking for. Could you please provide more context or clarify your request?",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "val",
+        "base263_split": "val",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__fitness__subset_0009__None__s000000_e000197",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__fitness__subset_0009__None__s000000_e000197.txt",
+      "old_text_sha256": "2d58f7c0de75ad4198817aca65b8d8ef8328c6cb93d0a8494b755f55f2562dd8",
+      "old_line_sha256_utf8_without_newline": "6260f0ce8739b4fe682c6ef348d0226431afcc88380accc1aeeed01c8bd66cef",
+      "old_caption": "I understand that you want me to add a subject to the sentence and make it a complete sentence. However, the input you provided \"There is no subject in the sentence\" already has a subject, which is \"there\". The sentence \"There is no subject in the sentence\" is a complete sentence, and it means that the sentence does not have any noun or pronoun that acts as a subject.",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__fitness__subset_0009__None_clip_10",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__fitness__subset_0009__None_clip_10.txt",
+      "old_text_sha256": "d0098976191c81bee663ac80b6f0e213ccf902814df64b3b1b3f697b0b23c516",
+      "old_line_sha256_utf8_without_newline": "cd46251834bdacc524077bc6f844be027dd84a5f489aa920111d2decbd2d0fc7",
+      "old_caption": "There is no subject in the sentence.",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__fitness__subset_0009__None_clip_11__s000000_e000197",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__fitness__subset_0009__None_clip_11__s000000_e000197.txt",
+      "old_text_sha256": "67fef34fa693eb0211b2c62f46d910630b431d7a82807126f2510786bba381a8",
+      "old_line_sha256_utf8_without_newline": "ce8677c52f6f8089cea3a968fe8b8ecdd3efebd28baa6f83f30cbb2ac757164e",
+      "old_caption": "It is not possible for me to provide a complete sentence without a subject. A complete sentence requires a subject and a verb. Can you please provide a subject for me to use in the sentence?",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__fitness__subset_0009__None_clip_12",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__fitness__subset_0009__None_clip_12.txt",
+      "old_text_sha256": "c3659e23c01d764a96132d98fb156fcab3729214d83723ced68f008e4f766d11",
+      "old_line_sha256_utf8_without_newline": "a7c059d24171a2fec2384f07ba6e036b1f4e1fddec3718645debdb081382f656",
+      "old_caption": "I apologize, but I cannot provide an output for the input \"There is no subject in the sentence\" as it is not a complete sentence. A sentence must have a subject in order to be grammatically correct.",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": false,
+        "training_pose69_split": null,
+        "base263_split": "train",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__fitness__subset_0009__None_clip_2__s000000_e000197",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__fitness__subset_0009__None_clip_2__s000000_e000197.txt",
+      "old_text_sha256": "d39fdfe2eeda253f5b829a3ddfec48f30454ee24cd63de4b8124a543ca3cc444",
+      "old_line_sha256_utf8_without_newline": "26d44e7ee2b99bc810997c40b526b893ab45b65bd6a762b5a4c82aec8050c5f9",
+      "old_caption": "There is no subject mentioned in the sentence.",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__fitness__subset_0036__Step_Out_Floor_Touch_Toknfftuck_Pi_clip_1",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__fitness__subset_0036__Step_Out_Floor_Touch_Toknfftuck_Pi_clip_1.txt",
+      "old_text_sha256": "5a24aa4a7eed0edb6b7591d9378c93c1ddf17cb533a4618c6c1b1f872d7302bd",
+      "old_line_sha256_utf8_without_newline": "6c4862263fbcb22d63c1590cd43a88670d9b757140894d668ecc1adf05765e5a",
+      "old_caption": "It is unclear what action is being described in the given input.",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__fitness__subset_0044__Reach_Up_To_Forward_Foi_D_Hffi_Uift_clip_4",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__fitness__subset_0044__Reach_Up_To_Forward_Foi_D_Hffi_Uift_clip_4.txt",
+      "old_text_sha256": "4e63e845ac7c0f001c5e0004a209547ea73413aa598c69953df9b3b333018604",
+      "old_line_sha256_utf8_without_newline": "34e5dfe187534e05ebad704eff95ecaea9e6538e4513ea6238afa5a59708edce",
+      "old_caption": "Sure, please provide the input and I will complete the sentence with a subject.",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt"
+        ],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__fitness__subset_0044__Reach_Up_To_Forward_Foi_D_Hffi_Uift_clip_6__s000000_e000197",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__fitness__subset_0044__Reach_Up_To_Forward_Foi_D_Hffi_Uift_clip_6__s000000_e000197.txt",
+      "old_text_sha256": "acd870ec5105d0f5cac9adccdb098be705193527faa7e4b3f097bfef4d76e88b",
+      "old_line_sha256_utf8_without_newline": "19c2d0d8a9de11100d1906f4f5b1a75e9947f2b03bb4cc7d55a93fa1136aec48",
+      "old_caption": "The subject of the sentence is not specified in the input. Please provide a clear and coherent sentence or phrase with the subject.",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt"
+        ],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__fitness__subset_0044__Reach_Up_To_Forward_Foi_D_Hffi_Uift_clip_7__s000000_e000197",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__fitness__subset_0044__Reach_Up_To_Forward_Foi_D_Hffi_Uift_clip_7__s000000_e000197.txt",
+      "old_text_sha256": "f29d8ed960c8cb9a4415a0e19f85f6a627a3e2824df3435a5a24ccdb221a8178",
+      "old_line_sha256_utf8_without_newline": "990e5ec4e983d4c6391ded898f77dc1114bb2ad223a9cedea4dc11c18b9d4d45",
+      "old_caption": "I apologize for any confusion. Please provide a clear and specific subject for me to complete the sentence.",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__fitness__subset_0058__Balancing_Reach_Back_Toknff_Tuck_Ri_clip_10",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__fitness__subset_0058__Balancing_Reach_Back_Toknff_Tuck_Ri_clip_10.txt",
+      "old_text_sha256": "6bb26bcccd2a7f6540ddbe73f83ec7ca45c8c92aab5a06a9af09b44d347f23a3",
+      "old_line_sha256_utf8_without_newline": "38db726405540bae58c2082ba72c1fc89c6b2c2dd177c15852ca710ffcadac04",
+      "old_caption": "The subject is not specified in the given phrase \"Balancing Reach Back Toknff Tuck Ri.\"",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__fitness__subset_0058__Balancing_Reach_Back_Toknff_Tuck_Ri_clip_15",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__fitness__subset_0058__Balancing_Reach_Back_Toknff_Tuck_Ri_clip_15.txt",
+      "old_text_sha256": "24161a52f38252ae679291519b25112f04ec3473784bb06efc1c733fb71acf26",
+      "old_line_sha256_utf8_without_newline": "e3fa8382a05e452afb9951402a9d2d1d2d902b862516e4e74eb469cc9a937e5f",
+      "old_caption": "It is unclear what the subject is doing in the given phrase \"Balancing Reach Back Toknff Tuck Ri.\"",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "test",
+        "base263_split": "test",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__fitness__subset_0058__Warrior_Iil_Out_Up_Arms_Rz_clip_11",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__fitness__subset_0058__Warrior_Iil_Out_Up_Arms_Rz_clip_11.txt",
+      "old_text_sha256": "ad2c9d16f631351c0c2e347e3dbbe289abbb55f49f7f3804ab8acac02903320b",
+      "old_line_sha256_utf8_without_newline": "677e253adb9c8cb37edff62f3a082d75db9d6c0f0b17b7168df61c93a97f12b1",
+      "old_caption": "The subject in the input \"Warrior Iil Out Up Arms Rz.\" is not specified, so it is not clear what the sentence means. Can you please provide a more specific subject for the sentence?",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__fitness__subset_0074__Reverse_Lunge_Knee_Tuci_To_Fguft_R_clip_8__s000000_e000197",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__fitness__subset_0074__Reverse_Lunge_Knee_Tuci_To_Fguft_R_clip_8__s000000_e000197.txt",
+      "old_text_sha256": "0bdbcd4996215a8b45d608f2ae05595f9e925302a40aa1bacfb962be2836136b",
+      "old_line_sha256_utf8_without_newline": "b65f81fff2fb097e1f49ed87ebb803a054516ce79f350b3cd16dee48448c5107",
+      "old_caption": "The subject of the sentence is not specified in the input.",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__fitness__subset_0075__Reverse_Lunge_Knee_Tuci_To_Fguft_R_clip_17__s000000_e000197",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__fitness__subset_0075__Reverse_Lunge_Knee_Tuci_To_Fguft_R_clip_17__s000000_e000197.txt",
+      "old_text_sha256": "5f02afca2b04921a9edf34e804b76590c901c203a4b2834ff383eeeae4f1b57b",
+      "old_line_sha256_utf8_without_newline": "738405e09a3bd8777489dfa70b1b8ad6885bc628e0f33db4011364f5f0b938cc",
+      "old_caption": "The subject is unclear in the provided sentence.",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__fitness__subset_0080__4_High_Knees_To_4ow_Pfnduumg_clip_7",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__fitness__subset_0080__4_High_Knees_To_4ow_Pfnduumg_clip_7.txt",
+      "old_text_sha256": "012ea9f1d5ea8c3bd8329a6c06cb3db87d063b595d3f7e88eb1f1dd513d95d16",
+      "old_line_sha256_utf8_without_newline": "0e676805b44ed8263a61ded945dac7d051ace880417a979f779ffd8bed126cca",
+      "old_caption": "The subject of the sentence is unclear.",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": false,
+        "training_pose69_split": null,
+        "base263_split": "train",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__fitness__subset_0080__Alt_clip_2__s000000_e000197",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__fitness__subset_0080__Alt_clip_2__s000000_e000197.txt",
+      "old_text_sha256": "2e206e5657b1620a01e481b1392ed905f9fbcba3d7e0962f7d493fef37124b6f",
+      "old_line_sha256_utf8_without_newline": "f16aa092b56d76762a784deaf6b7ccad5f23d75e89f159054f579887d3beb79b",
+      "old_caption": "Sure! Please provide a subject for the sentence.",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__fitness__subset_0081__Double_Knee_Tap_Toctfd_Rack_Pi_clip_1__s000000_e000197",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__fitness__subset_0081__Double_Knee_Tap_Toctfd_Rack_Pi_clip_1__s000000_e000197.txt",
+      "old_text_sha256": "b1543b38dbea04aa57d420530fbeb576cd550b37467d65a184f4b7579051ea5c",
+      "old_line_sha256_utf8_without_newline": "324c8a44d9f1e12ba96e42eb9af2cd3acbbf90731aef5eb5279914f9ec4c1f8f",
+      "old_caption": "The meaning of the phrase \"Double Knee Tap Toctfd Rack Pi\" is not clear.",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__fitness__subset_0090__Box_Swing_clip_4__s000000_e000197",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__fitness__subset_0090__Box_Swing_clip_4__s000000_e000197.txt",
+      "old_text_sha256": "8398ce2f624fe61aff0ccc922171fa7bddcef899b0ab2d53b2b4d9f41ec95484",
+      "old_line_sha256_utf8_without_newline": "d2c43e8f064871504f0c9a68c52e2c28a5bca806c9c2950238916c6558b55906",
+      "old_caption": "The subject of the sentence is not specified. Please provide me with additional information to generate a complete sentence.",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "val",
+        "base263_split": "val",
+        "paper_benchmark_membership": [
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train_val.txt",
+          "attributes/secondary_rich/val.txt"
+        ],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__fitness__subset_0104__Leg_Circle_To_Crunches_R_clip_6__s000000_e000197",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__fitness__subset_0104__Leg_Circle_To_Crunches_R_clip_6__s000000_e000197.txt",
+      "old_text_sha256": "e91be1dd33ce08a3ab80508e78cc6f1d3a1bc3766356363495936ee338e2576a",
+      "old_line_sha256_utf8_without_newline": "6ee1fe4e2c3be2252f03d7877c75db53727e00e9802d03f45de6d20a75ce62bd",
+      "old_caption": "Input: The subject of the sentence is not specified, so it is difficult to create a complete sentence with a subject. Could you please provide more context or a specific subject for the sentence?",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt"
+        ],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__fitness__subset_0109__Swivel_Jump_To_Knee_Tucks_F_clip_35",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__fitness__subset_0109__Swivel_Jump_To_Knee_Tucks_F_clip_35.txt",
+      "old_text_sha256": "35660d720168146a96385d3f19b5ce5ba72a59e3070f621ff511690b21806714",
+      "old_line_sha256_utf8_without_newline": "b2d30b4c936150229b5923fadec05bfde3247dcfe0e005c56999e29bf0f3b367",
+      "old_caption": "I apologize, but I am not able to provide a subject for your input because it is not clear what is being described in the action. Can you please provide more context or clarify the input?",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__game_motion__subset_0001__Damage_I_clip_21__s000000_e000197",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__game_motion__subset_0001__Damage_I_clip_21__s000000_e000197.txt",
+      "old_text_sha256": "ef37d117ad8529ceedaa49a4d5bfa08d44c49a896af2a600098da54cf7be52b6",
+      "old_line_sha256_utf8_without_newline": "98f6adef12cedbdbe08265d2aba0374dfffe2006b1a1962b15f44e99897f02aa",
+      "old_caption": "I apologize, but I'm not sure what you're referring to with \"Damage I\". Can you please provide more context or clarify the subject of the sentence?",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt"
+        ],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__game_motion__subset_0005__Dual_Wield_Ziel_clip_10",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__game_motion__subset_0005__Dual_Wield_Ziel_clip_10.txt",
+      "old_text_sha256": "f0661aaa2bf5e8af057a500acbc071087543731033a31220d3e2f71bf2b02bb6",
+      "old_line_sha256_utf8_without_newline": "ebac855d7048b79210584e9d62afddecf161287641f6592474913ce8c7569fb1",
+      "old_caption": "I apologize, but I cannot provide an output for this input as it is not grammatically correct. \"Ziel\" is not a recognized word in the English language and it is unclear what it refers to. Additionally, the phrase \"dual wielding\" is not a common phrase and it is unclear what it means in the context of this sentence.",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": false,
+        "training_pose69_split": null,
+        "base263_split": "train",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__game_motion__subset_0007__Entertainment_A_clip_30",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__game_motion__subset_0007__Entertainment_A_clip_30.txt",
+      "old_text_sha256": "2f9885baf27478d26a7433ae1764fcb04140185e5af9c0f51048c36d85ac716b",
+      "old_line_sha256_utf8_without_newline": "5c759cb9de0c8d1e4471677635ebfc1cc59108a8a2bc263dc7bed94ba88cf2b9",
+      "old_caption": "The subject of the sentence is not specified.",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__game_motion__subset_0008__Entertainment_Maruta_clip_10",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__game_motion__subset_0008__Entertainment_Maruta_clip_10.txt",
+      "old_text_sha256": "23adffe968077300b68b0bfcf8b711927030d5782153684500e07786c2bb071d",
+      "old_line_sha256_utf8_without_newline": "f7d612dfd7540c551bf69f33680cb29de58aa447f32825e11a20d7a86f20f196",
+      "old_caption": "The subject of the sentence is \"the person\".",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__game_motion__subset_0012__Hand_Zerst_clip_4",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__game_motion__subset_0012__Hand_Zerst_clip_4.txt",
+      "old_text_sha256": "57a8c45c1e5312f99f7fb6215c4fd547bb7ab164a896058d2383a849ca72e823",
+      "old_line_sha256_utf8_without_newline": "fd32de004381014674e476fe787867f73b62fa725e26aa31676acbbaf0fbf28a",
+      "old_caption": "It is unclear what \"Hand Zerst\" means or refers to.",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__game_motion__subset_0012__Heavy_Drei_clip_3",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__game_motion__subset_0012__Heavy_Drei_clip_3.txt",
+      "old_text_sha256": "5336a8caf1b40e74e318f89fd5eefd7d737b5d8d30fcc6e90e7cc5e1811e3e44",
+      "old_line_sha256_utf8_without_newline": "adaf11de7215d550c43aebfb9b28649479f00d1b6f79ddadfb56851d5515d92a",
+      "old_caption": "Understood. Please provide a specific subject for the sentence.",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": false,
+        "training_pose69_split": null,
+        "base263_split": "train",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__game_motion__subset_0023__Monstar_The_clip_3",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__game_motion__subset_0023__Monstar_The_clip_3.txt",
+      "old_text_sha256": "0adf14d9438a0c03367c84a1ad2dbcb79a7d6f76fd57508dc4356c4c9f3342e3",
+      "old_line_sha256_utf8_without_newline": "0d04392a19e1f12370fe6e321fa25d41bbbd428d1003f470dd4d662d50599d60",
+      "old_caption": "I understand that you want me to add the subject of the sentence and make it a complete sentence. Please provide me with an input to create the output you desire.",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": false,
+        "training_pose69_split": null,
+        "base263_split": "test",
+        "paper_benchmark_membership": [
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/test.txt"
+        ],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__game_motion__subset_0028__Shield_Rauer_clip_4",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__game_motion__subset_0028__Shield_Rauer_clip_4.txt",
+      "old_text_sha256": "87233c1ce9bbf29288c8e86aa672bc7b53bc4d78eebced3639eec5caf337fac1",
+      "old_line_sha256_utf8_without_newline": "3dd5c3cf6f0af4465704be453722f6a7abe569dc7ae8dd0980515a474b0de4c6",
+      "old_caption": "The subject of the sentence is a boy.",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": false,
+        "training_pose69_split": null,
+        "base263_split": "train",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__game_motion__subset_0028__Shield_Sky_clip_4",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__game_motion__subset_0028__Shield_Sky_clip_4.txt",
+      "old_text_sha256": "2f9885baf27478d26a7433ae1764fcb04140185e5af9c0f51048c36d85ac716b",
+      "old_line_sha256_utf8_without_newline": "5c759cb9de0c8d1e4471677635ebfc1cc59108a8a2bc263dc7bed94ba88cf2b9",
+      "old_caption": "The subject of the sentence is not specified.",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "val",
+        "base263_split": "val",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__game_motion__subset_0031__Short_Weapon_Under_clip_3",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__game_motion__subset_0031__Short_Weapon_Under_clip_3.txt",
+      "old_text_sha256": "0a9ec2afae9abcd59e9c60d155bb9abe6a3af8b44ca43f48364ba1673d32025d",
+      "old_line_sha256_utf8_without_newline": "92368714f5449a2072dd61eb52e7406e943bfb1d2f0745e3d27957521eda7a15",
+      "old_caption": "The subject of the sentence is \"a man.\"",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__game_motion__subset_0034__Other_Be_clip_14__s000000_e000197",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__game_motion__subset_0034__Other_Be_clip_14__s000000_e000197.txt",
+      "old_text_sha256": "fa7924930b58f2b03d9f154c1bdf213f59c8c5abdc791407851083f94b877afa",
+      "old_line_sha256_utf8_without_newline": "2a2fa61e1dd62bc261bd5432b402a6f27edb663484d2f48b6d119c4e14b2f8c0",
+      "old_caption": "Sure, I'd be happy to help. Please provide me with the action or situation you would like me to use as the subject of the sentence.",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "test",
+        "base263_split": "test",
+        "paper_benchmark_membership": [
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/test.txt"
+        ],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__game_motion__subset_0034__Other_Be_clip_14__s000069_e000266",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__game_motion__subset_0034__Other_Be_clip_14__s000069_e000266.txt",
+      "old_text_sha256": "fa7924930b58f2b03d9f154c1bdf213f59c8c5abdc791407851083f94b877afa",
+      "old_line_sha256_utf8_without_newline": "2a2fa61e1dd62bc261bd5432b402a6f27edb663484d2f48b6d119c4e14b2f8c0",
+      "old_caption": "Sure, I'd be happy to help. Please provide me with the action or situation you would like me to use as the subject of the sentence.",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt"
+        ],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__game_motion__subset_0034__Other_Be_clip_7__s000000_e000197",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__game_motion__subset_0034__Other_Be_clip_7__s000000_e000197.txt",
+      "old_text_sha256": "060b5607219091bb2fd086610ec5e18bae80d9a090f1343eb469d6e8aea5c6e3",
+      "old_line_sha256_utf8_without_newline": "f39387681cc367e75673c81bb2b9a0a2515eb035d628379ad7f1efc615e21034",
+      "old_caption": "The subject of the sentence is \"the person.\"",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "val",
+        "base263_split": "val",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__game_motion__subset_0034__Other_Be_clip_7__s000073_e000270",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__game_motion__subset_0034__Other_Be_clip_7__s000073_e000270.txt",
+      "old_text_sha256": "060b5607219091bb2fd086610ec5e18bae80d9a090f1343eb469d6e8aea5c6e3",
+      "old_line_sha256_utf8_without_newline": "f39387681cc367e75673c81bb2b9a0a2515eb035d628379ad7f1efc615e21034",
+      "old_caption": "The subject of the sentence is \"the person.\"",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__game_motion__subset_0034__Other_I_clip_10",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__game_motion__subset_0034__Other_I_clip_10.txt",
+      "old_text_sha256": "9e54ce0ea385125794ec05b2452ec23c5df53c13e0721ec8a7c518088fcc41e6",
+      "old_line_sha256_utf8_without_newline": "8ffa1348ee86dd515f9e813fb47b62eed4e9d379b1605cefa9893177ebc9cc93",
+      "old_caption": "Sure, please provide the subject of the sentence and the context so I can complete the sentence for you.",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": false,
+        "training_pose69_split": null,
+        "base263_split": "train",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__humman__subset_0006__The_Chair_Type_clip_2__s000000_e000197",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__humman__subset_0006__The_Chair_Type_clip_2__s000000_e000197.txt",
+      "old_text_sha256": "ab58bbf51ccb824a71d0a2ec412c0b125988b996670042031c44df055bba2341",
+      "old_line_sha256_utf8_without_newline": "097feaf5fa53558cbd714d1e1369bbe1f1893d03650c704d4f1861644a80dc1c",
+      "old_caption": "The subject of the sentence is \"someone\" and it is a complete sentence.",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__idea400__subset_0002__Sit_Down_While_Sitting",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__idea400__subset_0002__Sit_Down_While_Sitting.txt",
+      "old_text_sha256": "cebbbf4fdee4ac2cd0243a7cfec3fce00d181aa430d37b73a66d5d43cdac1c39",
+      "old_line_sha256_utf8_without_newline": "5c078ef09c0ef57e7e4a397e9c7f8e7ee5488ff770b5651b46eb98c6d20e5c53",
+      "old_caption": "It is not clear what the person is doing.",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__idea400__subset_0002__Walking_While_Sit_Down_clip_1",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__idea400__subset_0002__Walking_While_Sit_Down_clip_1.txt",
+      "old_text_sha256": "b3e9ff5980294b879d6677f2f44a56efdc13e6756985cc44abbde1efde3f1368",
+      "old_line_sha256_utf8_without_newline": "d64959046cab4dae512b53461922c0bd90c1a4ad8b826c4c25ffb162b7bf5127",
+      "old_caption": "It is unclear what the person is doing.",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__idea400__subset_0034__Standing_While_Drawing",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__idea400__subset_0034__Standing_While_Drawing.txt",
+      "old_text_sha256": "ef8f6325c7d78812fac0f2ac5d9ffefbbc4aadbfc82c2e8d4f6b2c3f037909bf",
+      "old_line_sha256_utf8_without_newline": "c912d62171785778d46872181bad2cdb2c45a5e1ab6f83631bb236a6e2194b7f",
+      "old_caption": "The subject of the sentence is not specified, so it is unclear what the complete sentence would be.",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "test",
+        "base263_split": "test",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__idea400__subset_0038__Crawling_During_Sitting",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__idea400__subset_0038__Crawling_During_Sitting.txt",
+      "old_text_sha256": "9b6fb329f15c41599831c3c0d669c458693a29e2eb367ec54ee2f9f221d486e6",
+      "old_line_sha256_utf8_without_newline": "dfe467564c69fb45b2d94eff7129870e5582aa63d3af330bc918bfe44d6492f7",
+      "old_caption": "It is unclear what the woman is doing as crawling and sitting are contradictory actions.",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "motionx_clean_30hz__music__subset_0006__Play_Guitar_clip_30__s000000_e000197",
+      "source": "Motion-X",
+      "line": 1,
+      "relative_text_path": "texts/motionx_clean_30hz__music__subset_0006__Play_Guitar_clip_30__s000000_e000197.txt",
+      "old_text_sha256": "6549d3e8789bcd10da2fd3f535b0318909658b2eeab4930466a17b8962a3cfa8",
+      "old_line_sha256_utf8_without_newline": "8d5edf341d5cd7d9b0a966e7fcee0984d70c0b79b08497b61a52a55218ba05f9",
+      "old_caption": "The subject of the sentence is not specified, so it is not possible to provide a complete sentence without additional information.",
+      "reason": "The literal output discusses sentence completion, missing subjects, input meaning or inability to describe the action. It does not give a committed caption of a person performing an action. A quoted opaque source label alone is not a repaired caption.",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      },
+      "reason_code": "confirmed_non_action_chat_or_grammar_output",
+      "action": "quarantine_pending_visual_recaption",
+      "scope": "exclude_clip_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "000912",
+      "source": "HumanML3D",
+      "line": 1,
+      "relative_text_path": "texts/000912.txt",
+      "old_text_sha256": "1d63c3704e95b84e5d108654548521c978cbf61ef19aa2932eaa97bd0473886d",
+      "old_line_sha256_utf8_without_newline": "440b96e523916a9421cea6ecd87e4b28fcb225ec2b0e3641022ddc88dd53bb27",
+      "old_caption": "walking forward with both hands swinging",
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/periodic/all.txt",
+          "attributes/periodic/train.txt",
+          "attributes/periodic/train_val.txt",
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt"
+        ],
+        "paper_locked": false
+      },
+      "reason": "The nonzero interval has equal start/end and selects no duration. Do not replace it by 0#0, which changes its meaning to the whole clip. Other full-clip captions in this file remain available; recover an interval from upstream evidence or omit only this annotation in a separate usable view.",
+      "reason_code": "invalid_nonzero_empty_interval",
+      "action": "quarantine_selected_line_pending_interval_recovery_keep_other_lines",
+      "scope": "exclude_selected_line_only_from_separate_usable_view",
+      "replacement_caption": null
+    },
+    {
+      "id": "010305",
+      "source": "HumanML3D",
+      "line": 1,
+      "relative_text_path": "texts/010305.txt",
+      "old_text_sha256": "96e207f4370d25a4f2df2aa521b64d67520297039a387749ebe365cc1469c14b",
+      "old_line_sha256_utf8_without_newline": "3fb6c45d1898973f499eb9137d587a3e7b7948ab94963614412544fc18748ea5",
+      "old_caption": "both arms raise to the right, hit throw",
+      "stratification": {
+        "pose69_available": false,
+        "training_pose69_split": null,
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "style/strike/all.txt",
+          "style/strike/train.txt",
+          "style/strike/train_val.txt"
+        ],
+        "paper_locked": false
+      },
+      "reason": "The nonzero interval has equal start/end and selects no duration. Do not replace it by 0#0, which changes its meaning to the whole clip. Other full-clip captions in this file remain available; recover an interval from upstream evidence or omit only this annotation in a separate usable view.",
+      "reason_code": "invalid_nonzero_empty_interval",
+      "action": "quarantine_selected_line_pending_interval_recovery_keep_other_lines",
+      "scope": "exclude_selected_line_only_from_separate_usable_view",
+      "replacement_caption": null
+    }
+  ]
+}

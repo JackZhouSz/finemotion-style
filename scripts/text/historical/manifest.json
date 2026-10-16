@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "snapshot_inventory_date": "2026-10-16",
+  "project": "FineMotion historical processing",
+  "role": "Six unchanged implementation snapshots and one documented public metadata-loading adaptation. Original private sources remain unchanged.",
+  "files": [
+    {
+      "file": "build_finemotion_content_lists_from_texts.py",
+      "historical_project_relative_path": "tools/build_finemotion_content_lists_from_texts.py",
+      "sha256": "55fcb4f9361c7357a104b900f48115093eb8294363f114e2624c22288d0b1071",
+      "unchanged_snapshot": true,
+      "original_source_sha256": "55fcb4f9361c7357a104b900f48115093eb8294363f114e2624c22288d0b1071",
+      "byte_identity_with_original": true
+    },
+    {
+      "file": "build_splits_sem_v3_1_from_263_texts.py",
+      "historical_project_relative_path": "tools/build_splits_sem_v3_1_from_263_texts.py",
+      "sha256": "3a09d12135710ad1c08e793a367b38cc5c9b505e26b031563b9b1a969b81ab9b",
+      "unchanged_snapshot": true,
+      "original_source_sha256": "3a09d12135710ad1c08e793a367b38cc5c9b505e26b031563b9b1a969b81ab9b",
+      "byte_identity_with_original": true
+    },
+    {
+      "file": "semantic_subset_config_v3.py",
+      "historical_project_relative_path": "tools/semantic_subset_config_v3.py",
+      "sha256": "837a60d651c6ec05f5d594a73923cdc36f404eb6326da86e25dd347a062d7d0f",
+      "unchanged_snapshot": true,
+      "original_source_sha256": "837a60d651c6ec05f5d594a73923cdc36f404eb6326da86e25dd347a062d7d0f",
+      "byte_identity_with_original": true
+    },
+    {
+      "file": "tokenize_humanml_texts_spacy.py",
+      "historical_project_relative_path": "tools/tokenize_humanml_texts_spacy.py",
+      "sha256": "e72f853ce1880bbabba7121fbdfa4eae1076275ca8616e12024a4912e54e134f",
+      "unchanged_snapshot": true,
+      "original_source_sha256": "e72f853ce1880bbabba7121fbdfa4eae1076275ca8616e12024a4912e54e134f",
+      "byte_identity_with_original": true
+    },
+    {
+      "file": "vlm_build_label_context_v4.py",
+      "historical_project_relative_path": "tools/vlm_build_label_context_v4.py",
+      "sha256": "a112d2dded8dd7beff362c84bd66bc3bf3ba532a0c8a3ff7bfae760ed0c61133",
+      "unchanged_snapshot": false,
+      "adaptation": "Embedded LaFAN1 README descriptions removed; LaFAN1 requires user-local --lafan-theme-map. Missing maps/themes fail before writing, metadata SHA recorded, no invented fallback. Upstream metadata is not bundled or relicensed.",
+      "original_source_sha256": "aaec552253235f351e4267ef51b518d7f24b47793e3eadcf72735752e2279045",
+      "byte_identity_with_original": false
+    },
+    {
+      "file": "vlm_caption_videos_videollama3.py",
+      "historical_project_relative_path": "tools/vlm_caption_videos_videollama3.py",
+      "sha256": "3e3e27c7930387b02d98447a2b1d69b6c540cb982e273a0dce583727d08cd346",
+      "unchanged_snapshot": true,
+      "original_source_sha256": "3e3e27c7930387b02d98447a2b1d69b6c540cb982e273a0dce583727d08cd346",
+      "byte_identity_with_original": true
+    },
+    {
+      "file": "vlm_jsonl_to_humanml_texts.py",
+      "historical_project_relative_path": "tools/vlm_jsonl_to_humanml_texts.py",
+      "sha256": "a37d8ac74258352231e3a7275b76c31b6427b1919871dbf617fa4901751066df",
+      "unchanged_snapshot": true,
+      "original_source_sha256": "a37d8ac74258352231e3a7275b76c31b6427b1919871dbf617fa4901751066df",
+      "byte_identity_with_original": true
+    }
+  ]
+}

@@ -6,9 +6,11 @@ The benchmark integrates CG motion data from multiple sources, focusing on prese
 
 [Project page](https://www.dr-lab.org/projects/kinematic-frequency-motion/) · [Method code](https://github.com/dongran/kinematic-frequency-motion) · [2025 BVH processing reference](https://github.com/dongran/tempo-changing-music2motion)
 
-## First release: one conversion example
+## Release materials
 
-This release provides **one Bandai Namco example**, conversion scripts, and HumanML3D-style text preparation. The full dataset and source-separated text packages are being prepared separately. Bulk downloads will be linked here through Google Drive and OneDrive when available.
+This repository provides **one complete Bandai Namco conversion example**, the text preparation pipeline, and the frozen benchmark construction rules. A Bandai motion archive and a source-scoped original text package are prepared separately for external downloads. Google Drive and OneDrive links will be added after upload. See the [release guide](docs/RELEASE_V1.md) for versions, source scope and known issues.
+
+Prepared filenames, byte sizes and SHA256 checksums are recorded in the [archive manifest](release_metadata/release_archives.json). The text package contains both the historical paper-exact view and an explicitly derived compatibility view; they are alternatives within the same source subset.
 
 ![Original Bandai BVH and converted SMPL motion](assets/bandai_wave/bandai_bvh_smpl.gif)
 
@@ -56,7 +58,7 @@ caption#lemma/POS lemma/POS ...#start_time#end_time
 
 The caption describes the motion. Lemmatization gives dictionary forms; POS tags describe grammatical roles. `0#0` means the whole clip. These fields follow the [HumanML3D text layout](https://github.com/EricGuo5513/HumanML3D/blob/main/text_process.py).
 
-Our historical annotation pipeline combined source-label descriptions and VideoLLaMA3 video descriptions, then used spaCy to produce lemma/POS fields. This release includes one short, visually reviewed wave caption. The formatter preserves the original sentence and existing tokens by default, and provides both the actual FineMotion rule and a HumanML reference rule.
+Our historical annotation pipeline used source action/style labels as prompt context. MAIN commonly retained a source-label anchor; VideoLLaMA3 generated DETAILS from rendered motion. spaCy then produced lemma/POS fields. These are different operations: POS tagging supplies grammatical features, while the four benchmark categories come from separate caption-matching rules. The bundled wave caption was visually reviewed for the example. The formatter preserves original sentences and existing tokens by default, and provides both the FineMotion rule and a HumanML reference rule.
 
 ```bash
 python -m pip install numpy
@@ -66,9 +68,24 @@ python scripts/prepare_training_texts.py --input-dir examples/bandai_wave/traini
 
 To format your own captions, install `scripts/requirements-text.txt` and follow the [text preparation guide](docs/TEXT_FORMAT.md). The guide also explains multiple captions, time segments, token truncation, and how the current model code uses the fields.
 
+To convert archived `caption_main` / `caption_details` records without changing their wording:
+
+```bash
+python scripts/text/caption_fields_to_jsonl.py --input-jsonl captions.jsonl --output-jsonl prepared_captions.jsonl
+python scripts/prepare_training_texts.py --input-jsonl prepared_captions.jsonl --output-dir prepared_texts --profile legacy_finemotion
+```
+
+See [source reconstruction](docs/SOURCE_RECONSTRUCTION.md) for label context, video annotation, inherited texts and the available motion adapters. The public LaFAN context builder reads user-obtained theme metadata; the source theme prose is not bundled in the code.
+
+## Training pool and four-category benchmark
+
+The saved motion-availability view contains **59,038 IDs**: **47,236 train, 5,866 validation and 5,936 test**. Training uses the full training partition across sources, including motions outside the four style categories. The smaller Impact, Strike, Balance and Shake subsets are evaluation/analysis selections, not the whole training pool.
+
+The [benchmark protocol](docs/BENCHMARK_PROTOCOL.md) records the original caption rules, strict class exclusions, saved partitions, availability projections and count differences. [Text/benchmark tools](scripts/text/README.md) expose those rules and export the frozen lists. Revised captions and any derived usable split have separate version names; they do not silently replace the paper's lists.
+
 ## Sources and licenses
 
-Code and documentation are MIT licensed. The Bandai source/adapted motion example and its previews are **CC BY-NC 4.0**. The example caption is distributed with the same noncommercial annotation terms. Keep the original attribution and modification notices. See [NOTICE.md](NOTICE.md) and the source-specific files in `licenses/`; the software license does not relicense motion data or model assets.
+Code and documentation are MIT licensed, with retained third-party notices. Bandai source/adapted motion and annotations use **CC BY-NC 4.0**. Inherited HumanML3D text retains its upstream MIT notice; Motion-X annotations and their adaptations retain **CC BY-NC-SA 4.0**. The current public text scope covers these three sources. Other source motions are obtained from their providers; the generated-text scope of LAFAN1, Motorica and FineDance remains separately assessed. This is not a finding that all new descriptions are prohibited. See [NOTICE.md](NOTICE.md), the [release guide](docs/RELEASE_V1.md) and source-specific files in `licenses/`.
 
 ## Citation
 

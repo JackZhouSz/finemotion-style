@@ -1,0 +1,33 @@
+{
+  "id": "001034",
+  "line": 3,
+  "original_caption": "a person raises arms overhead, does a backflip then falls",
+  "original_time_tags_seconds": [
+    0.0,
+    3.0
+  ],
+  "issue_type": "caption_event_outside_its_annotation_interval_in_paired_20hz_clip",
+  "positive_opposing_evidence": "All 60 paired-render frames within [0,3) show upright standing and the beginning of arm raising; none contains body inversion or falling to a low/lying posture. Inversion and low/lying poses occur later in the paired clip.",
+  "interval_checked": {
+    "fps": 20,
+    "all_indices": "0..59 inclusive",
+    "time_seconds": "0.00..2.95 inclusive",
+    "coverage": "Every frame of the annotated interval in the paired 20Hz review video, not just overview samples",
+    "source_video_sha256": "dba5aa221bccb1fa7e62dac2bb44f3e2a851f6b4cef85d2866e4ece15f9de266"
+  },
+  "outside_interval_overview_evidence": [
+    {
+      "time_seconds": 4.6,
+      "observation": "Body inverted in a backward-rotation-like pose."
+    },
+    {
+      "time_seconds": 5.1,
+      "observation": "Body is low, followed by later side-lying poses."
+    }
+  ],
+  "human_review_status": "pending",
+  "proposed_action": "Check the original HumanML clip/time provenance and create an explicit versioned time correction or conservative interval caption. Do not change tags by guessing a universal scaling factor.",
+  "source_caption_or_time_tags_modified": false,
+  "included_in_compatibility_format_patch": false,
+  "scope_limit": "Evidence concerns the current paired representation and its time tags; it does not determine whether the upstream annotation or a historical conversion caused the mismatch. One targeted example does not estimate a corpus rate."
+}

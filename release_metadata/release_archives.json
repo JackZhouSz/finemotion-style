@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "prepared_date_JST": "2026-10-16",
+  "notes": "Bulk archives are prepared for author upload to external storage. Null URLs mean no cloud upload/link is claimed. See docs/RELEASE_V1.md and source-specific notices.",
+  "archives": [
+    {
+      "kind": "source_scoped_text",
+      "filename": "finemotion_text_public_sources_v1_20261016.tar.gz",
+      "bytes": 36514047,
+      "sha256": "00ce0f5c545183f4a5427e04a5835168d7031571b53c7e646a40455236d592c9",
+      "external_download_url": null,
+      "status": "prepared_for_author_upload",
+      "source_scope": {
+        "HumanML3D": 13186,
+        "Motion-X": 35998,
+        "Bandai": 2676
+      },
+      "default_text_files": 51860,
+      "compatibility_text_files": 51816,
+      "views_are_alternatives_not_additive": true,
+      "complete_paper_clip_files": 7,
+      "paper_reference_sentences": 8
+    },
+    {
+      "kind": "bandai_original",
+      "filename": "finemotion_bandai_original_v1_20261014.tar.gz",
+      "bytes": 377383174,
+      "sha256": "8683f4a1f994129ddee7092312653e1a37922df41f25272b54a57e9de526017c",
+      "external_download_url": null,
+      "status": "prepared_for_author_upload",
+      "SMPL24_source_sequences": 3077,
+      "paired_20hz_windows": 2676
+    }
+  ]
+}

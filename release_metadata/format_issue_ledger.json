@@ -1,0 +1,1977 @@
+{
+  "version": "format_issue_review_20261016",
+  "source_edits": 0,
+  "model_calls": 0,
+  "nonfinite_time_lines": 49,
+  "invalid_nonzero_empty_intervals": 2,
+  "nan_to_zero_whole_clip_interpretations": 48,
+  "nan_to_zero_non_whole_clip_interpretations": 1,
+  "policy": "No silent normalization and no action-caption change. Source archive and historical splits remain untouched.",
+  "records": [
+    {
+      "id": "000007",
+      "source": "HumanML3D",
+      "line": 2,
+      "old_caption": "a person starts at the top of stairs and at a regular pace walks down stairs.",
+      "old_tokens": "a/DET person/NOUN start/VERB at/ADP the/DET top/NOUN of/ADP stair/NOUN and/CCONJ at/ADP a/DET regular/ADJ pace/NOUN walk/VERB down/ADP stair/NOUN",
+      "old_time_fields": [
+        "nan",
+        "0.0"
+      ],
+      "old_complete_line": "a person starts at the top of stairs and at a regular pace walks down stairs.#a/DET person/NOUN start/VERB at/ADP the/DET top/NOUN of/ADP stair/NOUN and/CCONJ at/ADP a/DET regular/ADJ pace/NOUN walk/VERB down/ADP stair/NOUN#nan#0.0",
+      "old_text_sha256": "1282279762c67f51bd7194f9d44a4a0f3c2e9f00ae9c2fa9161c962f405d51a5",
+      "old_line_sha256_utf8_without_newline": "8a2884516a92b50c146401a31f960de0358a59870836a69f0d9239e407a1dc85",
+      "relative_text_path": "texts/000007.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 3,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "val",
+        "base263_split": "val",
+        "paper_benchmark_membership": [
+          "attributes/periodic/all.txt",
+          "attributes/periodic/train_val.txt",
+          "attributes/periodic/val.txt",
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train_val.txt",
+          "attributes/secondary_rich/val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "000154",
+      "source": "HumanML3D",
+      "line": 2,
+      "old_caption": "a person is standing and uses left hand to throw or indicate something. the person then bends forward with hands together as if they are catching something.",
+      "old_tokens": "a/DET person/NOUN is/AUX stand/VERB and/CCONJ use/VERB left/ADJ hand/NOUN to/PART throw/VERB or/CCONJ indicate/VERB something/PRON the/DET person/NOUN then/ADV bend/VERB forward/ADV with/ADP hand/NOUN together/ADV as/SCONJ if/SCONJ they/PRON are/AUX catch/VERB something/PRON",
+      "old_time_fields": [
+        "nan",
+        "0.0"
+      ],
+      "old_complete_line": "a person is standing and uses left hand to throw or indicate something. the person then bends forward with hands together as if they are catching something.#a/DET person/NOUN is/AUX stand/VERB and/CCONJ use/VERB left/ADJ hand/NOUN to/PART throw/VERB or/CCONJ indicate/VERB something/PRON the/DET person/NOUN then/ADV bend/VERB forward/ADV with/ADP hand/NOUN together/ADV as/SCONJ if/SCONJ they/PRON are/AUX catch/VERB something/PRON#nan#0.0",
+      "old_text_sha256": "e7934bbc9332e19c3c983c55e96fcd02e823533f60e29046d56d15bd509022ea",
+      "old_line_sha256_utf8_without_newline": "6beaaf10239e8d06c3feff1599dd7d7c9a661af471a51f41700fe7af577f8cd2",
+      "relative_text_path": "texts/000154.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": false,
+        "training_pose69_split": null,
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "000224",
+      "source": "HumanML3D",
+      "line": 1,
+      "old_caption": "he stomps his left feet",
+      "old_tokens": "he/PRON stomp/VERB his/DET left/ADJ foot/NOUN",
+      "old_time_fields": [
+        "nan",
+        "0.0"
+      ],
+      "old_complete_line": "he stomps his left feet#he/PRON stomp/VERB his/DET left/ADJ foot/NOUN#nan#0.0",
+      "old_text_sha256": "180dcc5175497536eede8e20289f666527a88eaec62a8ce0e6848052ab31284f",
+      "old_line_sha256_utf8_without_newline": "9b025d0e8b6194500f569582b7dbcc8e83fad0badae34321bb8684f74267895e",
+      "relative_text_path": "texts/000224.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "000244",
+      "source": "HumanML3D",
+      "line": 1,
+      "old_caption": "a person turns around to the right and continues to walk in a u shape.",
+      "old_tokens": "a/DET person/NOUN turn/VERB around/ADP to/ADP the/DET right/NOUN and/CCONJ continue/VERB to/PART walk/VERB in/ADP a/DET u/PROPN shape/NOUN",
+      "old_time_fields": [
+        "nan",
+        "0.0"
+      ],
+      "old_complete_line": "a person turns around to the right and continues to walk in a u shape.#a/DET person/NOUN turn/VERB around/ADP to/ADP the/DET right/NOUN and/CCONJ continue/VERB to/PART walk/VERB in/ADP a/DET u/PROPN shape/NOUN#nan#0.0",
+      "old_text_sha256": "8b5927c0f3741b4f6e9695025223f28b3bd40d5c93facb052ab0763043fe84b9",
+      "old_line_sha256_utf8_without_newline": "3264cdadf89a61e5a7905da87bb47253579b97821ea69bb42e71971ec5393710",
+      "relative_text_path": "texts/000244.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/periodic/all.txt",
+          "attributes/periodic/train.txt",
+          "attributes/periodic/train_val.txt",
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt",
+          "content/turn/all.txt",
+          "content/turn/train.txt",
+          "content/turn/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "000408",
+      "source": "HumanML3D",
+      "line": 3,
+      "old_caption": "someone stands still and claps with their hands in front of their torso.",
+      "old_tokens": "someone/PRON stand/VERB still/ADV and/CCONJ clap/NOUN with/ADP their/DET hand/NOUN in/ADP front/NOUN of/ADP their/DET torso/NOUN",
+      "old_time_fields": [
+        "nan",
+        "nan"
+      ],
+      "old_complete_line": "someone stands still and claps with their hands in front of their torso.#someone/PRON stand/VERB still/ADV and/CCONJ clap/NOUN with/ADP their/DET hand/NOUN in/ADP front/NOUN of/ADP their/DET torso/NOUN#nan#nan",
+      "old_text_sha256": "e776dff93def5c190eac96987143944e8c871aeb8ba82aa82b9002543b9f39a2",
+      "old_line_sha256_utf8_without_newline": "53d9c065e7aa156308f2940d042acbf42f930a505194a6e98b288b81cf5965f4",
+      "relative_text_path": "texts/000408.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "000550",
+      "source": "HumanML3D",
+      "line": 2,
+      "old_caption": "a stick person walking from side to side.",
+      "old_tokens": "a/DET stick/NOUN person/NOUN walk/VERB from/ADP side/NOUN to/ADP side/NOUN",
+      "old_time_fields": [
+        "nan",
+        "nan"
+      ],
+      "old_complete_line": "a stick person walking from side to side.#a/DET stick/NOUN person/NOUN walk/VERB from/ADP side/NOUN to/ADP side/NOUN#nan#nan",
+      "old_text_sha256": "3af5d1b9f845b4abb34328a617d1024c3806a011b97466c8162f82769029e6e3",
+      "old_line_sha256_utf8_without_newline": "dab3dae6c4ded55ea949776b92383acd46c815ab668ab33a06f55619e4b71438",
+      "relative_text_path": "texts/000550.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/periodic/all.txt",
+          "attributes/periodic/train.txt",
+          "attributes/periodic/train_val.txt",
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt",
+          "content/turn/all.txt",
+          "content/turn/train_val.txt",
+          "content/turn/val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "000665",
+      "source": "HumanML3D",
+      "line": 1,
+      "old_caption": "a person walks forward, with a quickening step and stops tentatively, as they take their last step.",
+      "old_tokens": "a/DET person/NOUN walk/VERB forward/ADV with/ADP a/DET quicken/VERB step/NOUN and/CCONJ stop/VERB tentatively/ADV as/SCONJ they/PRON take/VERB their/DET last/ADJ step/NOUN",
+      "old_time_fields": [
+        "nan",
+        "0.0"
+      ],
+      "old_complete_line": "a person walks forward, with a quickening step and stops tentatively, as they take their last step.#a/DET person/NOUN walk/VERB forward/ADV with/ADP a/DET quicken/VERB step/NOUN and/CCONJ stop/VERB tentatively/ADV as/SCONJ they/PRON take/VERB their/DET last/ADJ step/NOUN#nan#0.0",
+      "old_text_sha256": "bc172f94ad79e893045c23ade22c30954d641a36ac1adba1fa20ddbf3fcd4e1d",
+      "old_line_sha256_utf8_without_newline": "ddd643415706e39ee07256025b9d0cc4f39024e7a3d681b93984e7fd7372394f",
+      "relative_text_path": "texts/000665.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "val",
+        "base263_split": "val",
+        "paper_benchmark_membership": [
+          "attributes/periodic/all.txt",
+          "attributes/periodic/train_val.txt",
+          "attributes/periodic/val.txt",
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train_val.txt",
+          "attributes/secondary_rich/val.txt",
+          "style/balance/all.txt",
+          "style/balance/train_val.txt",
+          "style/balance/val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "000746",
+      "source": "HumanML3D",
+      "line": 1,
+      "old_caption": "a person takes four steps turning 90 degrees to the left as they do so.",
+      "old_tokens": "a/DET person/NOUN take/VERB four/NUM step/NOUN turn/VERB degree/NOUN to/ADP the/DET left/NOUN as/SCONJ they/PRON do/AUX so/ADV",
+      "old_time_fields": [
+        "nan",
+        "nan"
+      ],
+      "old_complete_line": "a person takes four steps turning 90 degrees to the left as they do so.#a/DET person/NOUN take/VERB four/NUM step/NOUN turn/VERB degree/NOUN to/ADP the/DET left/NOUN as/SCONJ they/PRON do/AUX so/ADV#nan#nan",
+      "old_text_sha256": "2fb593267b75eca0056d45734708e9616bc1c85af7e9e0d7913b71f1508a479a",
+      "old_line_sha256_utf8_without_newline": "461db0020ec26d77c0afae5e19cc5cc62a92fe5c32cefe1c5654556bc97778b3",
+      "relative_text_path": "texts/000746.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "000897",
+      "source": "HumanML3D",
+      "line": 1,
+      "old_caption": "a person gets on his hands and knees and crawls to the left then turns around and crawls back to the right and stands back up on his feet.",
+      "old_tokens": "a/DET person/NOUN get/VERB on/ADP his/DET hand/NOUN and/CCONJ knee/NOUN and/CCONJ crawl/VERB to/ADP the/DET left/NOUN then/ADV turn/VERB around/ADP and/CCONJ crawl/VERB back/ADV to/ADP the/DET right/NOUN and/CCONJ stand/VERB back/ADV up/ADV on/ADP his/DET foot/NOUN",
+      "old_time_fields": [
+        "nan",
+        "0.0"
+      ],
+      "old_complete_line": "a person gets on his hands and knees and crawls to the left then turns around and crawls back to the right and stands back up on his feet.#a/DET person/NOUN get/VERB on/ADP his/DET hand/NOUN and/CCONJ knee/NOUN and/CCONJ crawl/VERB to/ADP the/DET left/NOUN then/ADV turn/VERB around/ADP and/CCONJ crawl/VERB back/ADV to/ADP the/DET right/NOUN and/CCONJ stand/VERB back/ADV up/ADV on/ADP his/DET foot/NOUN#nan#0.0",
+      "old_text_sha256": "acbe1c38d22addde2089ed387c10b7b7f704e30613fee66a2d2e0685a1adc195",
+      "old_line_sha256_utf8_without_newline": "92c90087250d06bc1948543f888ebdf74e1e96b9caed30caf5acff2f521a35d6",
+      "relative_text_path": "texts/000897.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt",
+          "content/turn/all.txt",
+          "content/turn/train_val.txt",
+          "content/turn/val.txt",
+          "style/impact/all.txt",
+          "style/impact/train.txt",
+          "style/impact/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "001121",
+      "source": "HumanML3D",
+      "line": 3,
+      "old_caption": "a person standing upright, legs spread to about shoulder length. the person has thair arms out and bent at the elbos. the person then moves thair left hand up into a straight pose parallel with their chest.",
+      "old_tokens": "a/DET person/NOUN stand/VERB upright/ADV leg/NOUN spread/VERB to/ADP about/ADP shoulder/NOUN length/NOUN the/DET person/NOUN has/AUX thair/ADJ arm/NOUN out/ADP and/CCONJ bend/VERB at/ADP the/DET elbos/NOUN the/DET person/NOUN then/ADV move/VERB thair/NOUN left/VERB hand/NOUN up/ADP into/ADP a/DET straight/ADJ pose/NOUN parallel/ADJ with/ADP their/DET chest/NOUN",
+      "old_time_fields": [
+        "nan",
+        "nan"
+      ],
+      "old_complete_line": "a person standing upright, legs spread to about shoulder length. the person has thair arms out and bent at the elbos. the person then moves thair left hand up into a straight pose parallel with their chest.#a/DET person/NOUN stand/VERB upright/ADV leg/NOUN spread/VERB to/ADP about/ADP shoulder/NOUN length/NOUN the/DET person/NOUN has/AUX thair/ADJ arm/NOUN out/ADP and/CCONJ bend/VERB at/ADP the/DET elbos/NOUN the/DET person/NOUN then/ADV move/VERB thair/NOUN left/VERB hand/NOUN up/ADP into/ADP a/DET straight/ADJ pose/NOUN parallel/ADJ with/ADP their/DET chest/NOUN#nan#nan",
+      "old_text_sha256": "091711c6f4145f01950a341815f5a260b02db8ddf3f380b2e560c6eb8210639f",
+      "old_line_sha256_utf8_without_newline": "34bb5cb7f66a0a8efecf1eecb085df1857c8c2a577eecc7df121192785dd2953",
+      "relative_text_path": "texts/001121.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "val",
+        "base263_split": "val",
+        "paper_benchmark_membership": [
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train_val.txt",
+          "attributes/secondary_rich/val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "001308",
+      "source": "HumanML3D",
+      "line": 1,
+      "old_caption": "a man is running in place",
+      "old_tokens": "a/DET man/NOUN is/AUX run/VERB in/ADP place/NOUN",
+      "old_time_fields": [
+        "nan",
+        "nan"
+      ],
+      "old_complete_line": "a man is running in place#a/DET man/NOUN is/AUX run/VERB in/ADP place/NOUN#nan#nan",
+      "old_text_sha256": "94e2ae443b22425dd2ecfdbab51821e76bf85accdc88241068d9017b9fac8b1a",
+      "old_line_sha256_utf8_without_newline": "86002b3a4fcfca58136447aba2fa2f3b371518938208b0438e394bc311ea465c",
+      "relative_text_path": "texts/001308.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/periodic/all.txt",
+          "attributes/periodic/train.txt",
+          "attributes/periodic/train_val.txt",
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "001821",
+      "source": "HumanML3D",
+      "line": 1,
+      "old_caption": "a red a blue stick figure takes even steps walking forward starting on the right foot.",
+      "old_tokens": "a/DET red/ADJ a/DET blue/ADJ stick/NOUN figure/NOUN take/VERB even/ADV step/NOUN walk/VERB forward/ADV start/VERB on/ADP the/DET right/ADJ foot/NOUN",
+      "old_time_fields": [
+        "nan",
+        "nan"
+      ],
+      "old_complete_line": "a red a blue stick figure takes even steps walking forward starting on the right foot.#a/DET red/ADJ a/DET blue/ADJ stick/NOUN figure/NOUN take/VERB even/ADV step/NOUN walk/VERB forward/ADV start/VERB on/ADP the/DET right/ADJ foot/NOUN#nan#nan",
+      "old_text_sha256": "a524d1ab047542ef9b9d6c02133781648d3cd339702c35933db945986c95cc56",
+      "old_line_sha256_utf8_without_newline": "6ff01ca6250ca8b73e277d390442297be53c69af29b4b2fbd19b9d6353e4322d",
+      "relative_text_path": "texts/001821.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 3,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/periodic/all.txt",
+          "attributes/periodic/train.txt",
+          "attributes/periodic/train_val.txt",
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt",
+          "content/walk/all.txt",
+          "content/walk/test.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "001840",
+      "source": "HumanML3D",
+      "line": 3,
+      "old_caption": "a person stands right leg forward in a karate pose, leans forward and makes a high karate kick with their left leg and returns to the karate pose.",
+      "old_tokens": "a/DET person/NOUN stand/VERB right/ADJ leg/NOUN forward/ADV in/ADP a/DET karate/NOUN pose/NOUN lean/VERB forward/ADV and/CCONJ make/VERB a/DET high/ADJ karate/NOUN kick/NOUN with/ADP their/DET left/ADJ leg/NOUN and/CCONJ return/NOUN to/ADP the/DET karate/NOUN pose/VERB",
+      "old_time_fields": [
+        "nan",
+        "nan"
+      ],
+      "old_complete_line": "a person stands right leg forward in a karate pose, leans forward and makes a high karate kick with their left leg and returns to the karate pose.#a/DET person/NOUN stand/VERB right/ADJ leg/NOUN forward/ADV in/ADP a/DET karate/NOUN pose/NOUN lean/VERB forward/ADV and/CCONJ make/VERB a/DET high/ADJ karate/NOUN kick/NOUN with/ADP their/DET left/ADJ leg/NOUN and/CCONJ return/NOUN to/ADP the/DET karate/NOUN pose/VERB#nan#nan",
+      "old_text_sha256": "11ac0a380105c2fbe4e45e701047998185310106b879455bddf473d68060a9ba",
+      "old_line_sha256_utf8_without_newline": "73c884958e21b277ca173b33cff9e93575942299129d1f9782cbf7be421de35e",
+      "relative_text_path": "texts/001840.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": false,
+        "training_pose69_split": null,
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt",
+          "style/strike/all.txt",
+          "style/strike/train.txt",
+          "style/strike/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "002233",
+      "source": "HumanML3D",
+      "line": 2,
+      "old_caption": "a person jogs a short distance forward",
+      "old_tokens": "a/DET person/NOUN jog/VERB a/DET short/ADJ distance/NOUN forward/ADV",
+      "old_time_fields": [
+        "nan",
+        "0.0"
+      ],
+      "old_complete_line": "a person jogs a short distance forward#a/DET person/NOUN jog/VERB a/DET short/ADJ distance/NOUN forward/ADV#nan#0.0",
+      "old_text_sha256": "b9f2434cc153f98e867a6d8065770619b922c8476bcd0c7400410e02564108bf",
+      "old_line_sha256_utf8_without_newline": "6aeb4194c28bb84f51a9d9f9a018e32f4cd4d51aab14acc03189f8a72e79fb26",
+      "relative_text_path": "texts/002233.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/periodic/all.txt",
+          "attributes/periodic/train.txt",
+          "attributes/periodic/train_val.txt",
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "002259",
+      "source": "HumanML3D",
+      "line": 1,
+      "old_caption": "a person stands using his left hand to play a guitar moving it up and down.",
+      "old_tokens": "a/DET person/NOUN stand/VERB use/VERB his/DET left/ADJ hand/NOUN to/PART play/VERB a/DET guitar/NOUN move/VERB it/PRON up/ADP and/CCONJ down/ADV",
+      "old_time_fields": [
+        "nan",
+        "nan"
+      ],
+      "old_complete_line": "a person stands using his left hand to play a guitar moving it up and down.#a/DET person/NOUN stand/VERB use/VERB his/DET left/ADJ hand/NOUN to/PART play/VERB a/DET guitar/NOUN move/VERB it/PRON up/ADP and/CCONJ down/ADV#nan#nan",
+      "old_text_sha256": "9f48b28d2be998270cecbd202f4dc5da422c508b1f0c0cb619e60156859078df",
+      "old_line_sha256_utf8_without_newline": "b101fc5c37492936976e988619d1d6e02fda4f5ab63332ff26ebef31dd1118df",
+      "relative_text_path": "texts/002259.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "002632",
+      "source": "HumanML3D",
+      "line": 1,
+      "old_caption": "a person starts to jog in place and then returns to standing still.",
+      "old_tokens": "a/DET person/NOUN start/VERB to/ADP jog/PROPN in/ADP place/NOUN and/CCONJ then/ADV return/VERB to/ADP stand/VERB still/ADV",
+      "old_time_fields": [
+        "nan",
+        "0.0"
+      ],
+      "old_complete_line": "a person starts to jog in place and then returns to standing still.#a/DET person/NOUN start/VERB to/ADP jog/PROPN in/ADP place/NOUN and/CCONJ then/ADV return/VERB to/ADP stand/VERB still/ADV#nan#0.0",
+      "old_text_sha256": "8f48a916ef878dae0d68007c527ed0baf1b6d0703966d5234105eabd01045f80",
+      "old_line_sha256_utf8_without_newline": "13b8eb15683ba1de97247f1e10699bf1e0777403d857ec525d4deb691acd69db",
+      "relative_text_path": "texts/002632.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/periodic/all.txt",
+          "attributes/periodic/train.txt",
+          "attributes/periodic/train_val.txt",
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "002729",
+      "source": "HumanML3D",
+      "line": 1,
+      "old_caption": "a person steps sideways - left leg first followed by right",
+      "old_tokens": "a/DET person/NOUN step/VERB sideways/ADV left/VERB leg/NOUN first/ADV follow/VERB by/ADP right/NOUN",
+      "old_time_fields": [
+        "nan",
+        "0.0"
+      ],
+      "old_complete_line": "a person steps sideways - left leg first followed by right#a/DET person/NOUN step/VERB sideways/ADV left/VERB leg/NOUN first/ADV follow/VERB by/ADP right/NOUN#nan#0.0",
+      "old_text_sha256": "d6c821cf6a95ddf3ef95d2f33fe463a91e4fcd384f8803c6f6d73f9d2f8b72c6",
+      "old_line_sha256_utf8_without_newline": "3fd4526559f05a94dbeff3aad776964609a9f5aacd308cc023c923374ad0b283",
+      "relative_text_path": "texts/002729.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt",
+          "style/balance/all.txt",
+          "style/balance/train.txt",
+          "style/balance/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "003047",
+      "source": "HumanML3D",
+      "line": 3,
+      "old_caption": "a person walks to the right, then to the left and back to where he started from",
+      "old_tokens": "a/DET person/NOUN walk/VERB to/ADP the/DET right/NOUN then/ADV to/ADP the/DET left/NOUN and/CCONJ back/ADV to/ADP where/ADV he/PRON start/VERB from/ADP",
+      "old_time_fields": [
+        "nan",
+        "nan"
+      ],
+      "old_complete_line": "a person walks to the right, then to the left and back to where he started from#a/DET person/NOUN walk/VERB to/ADP the/DET right/NOUN then/ADV to/ADP the/DET left/NOUN and/CCONJ back/ADV to/ADP where/ADV he/PRON start/VERB from/ADP#nan#nan",
+      "old_text_sha256": "887303456ce209e03a357d833c1a39436223fe09ed32322bc99c61dabc07898a",
+      "old_line_sha256_utf8_without_newline": "f518f5d38d5b7ca16ec54514e8213693d13ac7e8613705752124441ba4828a83",
+      "relative_text_path": "texts/003047.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/periodic/all.txt",
+          "attributes/periodic/train.txt",
+          "attributes/periodic/train_val.txt",
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt",
+          "content/walk/all.txt",
+          "content/walk/train.txt",
+          "content/walk/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "003372",
+      "source": "HumanML3D",
+      "line": 3,
+      "old_caption": "a person makes a kicking motion with their right leg.",
+      "old_tokens": "a/DET person/NOUN make/VERB a/DET kicking/ADJ motion/NOUN with/ADP their/DET right/ADJ leg/NOUN",
+      "old_time_fields": [
+        "nan",
+        "0.0"
+      ],
+      "old_complete_line": "a person makes a kicking motion with their right leg.#a/DET person/NOUN make/VERB a/DET kicking/ADJ motion/NOUN with/ADP their/DET right/ADJ leg/NOUN#nan#0.0",
+      "old_text_sha256": "b1b6c0f9081e324ee521295b91a58386f66d7c8718c4d82c2d2182ac5a6ae11b",
+      "old_line_sha256_utf8_without_newline": "ebc79f9db13537c37c0f4b920b7d7e7be58adf29c11d02cce7eef8f7f1584a6c",
+      "relative_text_path": "texts/003372.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "val",
+        "base263_split": "val",
+        "paper_benchmark_membership": [
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train_val.txt",
+          "attributes/secondary_rich/val.txt",
+          "style/strike/all.txt",
+          "style/strike/train_val.txt",
+          "style/strike/val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "003536",
+      "source": "HumanML3D",
+      "line": 2,
+      "old_caption": "on hands and knees crawling around then steps up.",
+      "old_tokens": "on/ADP hand/NOUN and/CCONJ knee/NOUN crawl/VERB around/ADV then/ADV step/VERB up/ADP",
+      "old_time_fields": [
+        "nan",
+        "nan"
+      ],
+      "old_complete_line": "on hands and knees crawling around then steps up.#on/ADP hand/NOUN and/CCONJ knee/NOUN crawl/VERB around/ADV then/ADV step/VERB up/ADP#nan#nan",
+      "old_text_sha256": "f00a6305ba01f6a4d9a66a6bbdb56a4866ae3d009631083967e89f3d17cec6fd",
+      "old_line_sha256_utf8_without_newline": "8928df39544bff862e0a13932ebbb11b0097ea9d5f8312de1f8922d4e7d24772",
+      "relative_text_path": "texts/003536.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "003549",
+      "source": "HumanML3D",
+      "line": 2,
+      "old_caption": "a person moves their head in a circular motion many times.",
+      "old_tokens": "a/DET person/NOUN move/VERB their/DET head/NOUN in/ADP a/DET circular/ADJ motion/NOUN many/ADJ time/NOUN",
+      "old_time_fields": [
+        "nan",
+        "0.0"
+      ],
+      "old_complete_line": "a person moves their head in a circular motion many times.#a/DET person/NOUN move/VERB their/DET head/NOUN in/ADP a/DET circular/ADJ motion/NOUN many/ADJ time/NOUN#nan#0.0",
+      "old_text_sha256": "c7a018eed0347435f62b3edb0568e6471173e949b67de0fbd33a4dd1006be08f",
+      "old_line_sha256_utf8_without_newline": "1e92562c9ac6e9c529e679081461409256198deb82c625a52bda8475f5d82c17",
+      "relative_text_path": "texts/003549.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "003705",
+      "source": "HumanML3D",
+      "line": 3,
+      "old_caption": "a person walks forward, dodges to the left, then rights himself.",
+      "old_tokens": "a/DET person/NOUN walk/VERB forward/ADV dodge/NOUN to/ADP the/DET left/NOUN then/ADV right/VERB himself/PRON",
+      "old_time_fields": [
+        "nan",
+        "0.0"
+      ],
+      "old_complete_line": "a person walks forward, dodges to the left, then rights himself.#a/DET person/NOUN walk/VERB forward/ADV dodge/NOUN to/ADP the/DET left/NOUN then/ADV right/VERB himself/PRON#nan#0.0",
+      "old_text_sha256": "4698ea6b16eebff5aa62e7921c86c42265e9d082790c28a1a536460a4f7f791e",
+      "old_line_sha256_utf8_without_newline": "a365603c15eec5df8a1191cef7d5b59ce789b398370e1999a221edbe8c28ed24",
+      "relative_text_path": "texts/003705.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt",
+          "style/balance/all.txt",
+          "style/balance/train.txt",
+          "style/balance/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "004021",
+      "source": "HumanML3D",
+      "line": 3,
+      "old_caption": "a human figure jogs in place",
+      "old_tokens": "a/DET human/ADJ figure/NOUN jog/VERB in/ADP place/NOUN",
+      "old_time_fields": [
+        "nan",
+        "0.0"
+      ],
+      "old_complete_line": "a human figure jogs in place#a/DET human/ADJ figure/NOUN jog/VERB in/ADP place/NOUN#nan#0.0",
+      "old_text_sha256": "a5d58cee4976a094326ada526bc9d338b215223b4b6c7b36377d68f56391cfbb",
+      "old_line_sha256_utf8_without_newline": "c0a1d9bcd2813e66fbd2f12b030331435d40a5b97005e367add877f06b7a5a1b",
+      "relative_text_path": "texts/004021.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/periodic/all.txt",
+          "attributes/periodic/train.txt",
+          "attributes/periodic/train_val.txt",
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "004261",
+      "source": "HumanML3D",
+      "line": 2,
+      "old_caption": "a person makes three star jumps but the second jump is sloppy and incomplete.",
+      "old_tokens": "a/DET person/NOUN make/VERB three/NUM star/NOUN jump/NOUN but/CCONJ the/DET second/ADJ jump/NOUN is/AUX sloppy/ADJ and/CCONJ incomplete/ADJ",
+      "old_time_fields": [
+        "nan",
+        "nan"
+      ],
+      "old_complete_line": "a person makes three star jumps but the second jump is sloppy and incomplete.#a/DET person/NOUN make/VERB three/NUM star/NOUN jump/NOUN but/CCONJ the/DET second/ADJ jump/NOUN is/AUX sloppy/ADJ and/CCONJ incomplete/ADJ#nan#nan",
+      "old_text_sha256": "239b0d7dc461cc1b161afb353fac80408a3d82c57c5acf5b1e4ec03e4cf947cd",
+      "old_line_sha256_utf8_without_newline": "9dab0bf44a4a1b35b789d569637a021a4ebbd1e2100f94388f44f25856813ea2",
+      "relative_text_path": "texts/004261.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "style/impact/all.txt",
+          "style/impact/train.txt",
+          "style/impact/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "004278",
+      "source": "HumanML3D",
+      "line": 2,
+      "old_caption": "a person walks down a slope while swinging his arms back and forth.",
+      "old_tokens": "a/DET person/NOUN walk/VERB down/ADP a/DET slope/NOUN while/SCONJ swinge/VERB his/DET arm/NOUN back/ADV and/CCONJ forth/ADV",
+      "old_time_fields": [
+        "nan",
+        "nan"
+      ],
+      "old_complete_line": "a person walks down a slope while swinging his arms back and forth.#a/DET person/NOUN walk/VERB down/ADP a/DET slope/NOUN while/SCONJ swinge/VERB his/DET arm/NOUN back/ADV and/CCONJ forth/ADV#nan#nan",
+      "old_text_sha256": "6995ec76ab4f8b822c8b5f7ca66802fc9d74180808a4cb9a87be87394665aae6",
+      "old_line_sha256_utf8_without_newline": "8baefacccb13f2f32ce23fbb9e4de91386178bddfe7589f786808ec9b26e765d",
+      "relative_text_path": "texts/004278.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/periodic/all.txt",
+          "attributes/periodic/train.txt",
+          "attributes/periodic/train_val.txt",
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "004578",
+      "source": "HumanML3D",
+      "line": 1,
+      "old_caption": "the arms are stretched out then lowered back down, the right arm touches left shoulder across the chest, the right hand is placed at top of neck and down chest area then pointed outward and placed back at original position.",
+      "old_tokens": "the/DET arm/NOUN are/AUX stretch/VERB out/ADP then/ADV lower/VERB back/ADV down/ADV the/DET right/ADJ arm/NOUN touch/VERB left/VERB shoulder/NOUN across/ADP the/DET chest/NOUN the/DET right/ADJ hand/NOUN is/AUX place/VERB at/ADP top/NOUN of/ADP neck/NOUN and/CCONJ down/ADP chest/NOUN area/NOUN then/ADV point/VERB outward/ADV and/CCONJ place/VERB back/ADP at/ADP original/ADJ position/NOUN",
+      "old_time_fields": [
+        "nan",
+        "0.0"
+      ],
+      "old_complete_line": "the arms are stretched out then lowered back down, the right arm touches left shoulder across the chest, the right hand is placed at top of neck and down chest area then pointed outward and placed back at original position.#the/DET arm/NOUN are/AUX stretch/VERB out/ADP then/ADV lower/VERB back/ADV down/ADV the/DET right/ADJ arm/NOUN touch/VERB left/VERB shoulder/NOUN across/ADP the/DET chest/NOUN the/DET right/ADJ hand/NOUN is/AUX place/VERB at/ADP top/NOUN of/ADP neck/NOUN and/CCONJ down/ADP chest/NOUN area/NOUN then/ADV point/VERB outward/ADV and/CCONJ place/VERB back/ADP at/ADP original/ADJ position/NOUN#nan#0.0",
+      "old_text_sha256": "058a96d01f922e6ddc4a3a1243b24bec505c81b1c4c48d0f6d87f307ecafff6d",
+      "old_line_sha256_utf8_without_newline": "72f518a8a5f61bcf02a9ef7968ca9bd14086bb797acc7833f4dc1b51c06dc14e",
+      "relative_text_path": "texts/004578.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "004762",
+      "source": "HumanML3D",
+      "line": 3,
+      "old_caption": "a  person pivots with right foot backwards  , raises right hand then returns to start  position",
+      "old_tokens": "a/DET person/NOUN pivot/VERB with/ADP right/ADJ foot/NOUN backwards/ADV raise/VERB right/ADJ hand/NOUN then/ADV return/VERB to/PART start/VERB position/NOUN",
+      "old_time_fields": [
+        "nan",
+        "nan"
+      ],
+      "old_complete_line": "a  person pivots with right foot backwards  , raises right hand then returns to start  position#a/DET person/NOUN pivot/VERB with/ADP right/ADJ foot/NOUN backwards/ADV raise/VERB right/ADJ hand/NOUN then/ADV return/VERB to/PART start/VERB position/NOUN#nan#nan",
+      "old_text_sha256": "63f19873b5500fde96360926a970ba8174bbe9f8be5a6926d9fba7334a3839b1",
+      "old_line_sha256_utf8_without_newline": "d063181828a143841b24c57e809c4d2301e0130053089e499291d8f249eb4079",
+      "relative_text_path": "texts/004762.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/periodic/all.txt",
+          "attributes/periodic/train.txt",
+          "attributes/periodic/train_val.txt",
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt",
+          "content/turn/all.txt",
+          "content/turn/train.txt",
+          "content/turn/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "005760",
+      "source": "HumanML3D",
+      "line": 1,
+      "old_caption": "a person kicks at something in front of him with his right foot, like a soccer motion.",
+      "old_tokens": "a/DET person/NOUN kick/VERB at/ADP something/PRON in/ADP front/NOUN of/ADP him/PRON with/ADP his/DET right/ADJ foot/NOUN like/SCONJ a/DET soccer/NOUN motion/NOUN",
+      "old_time_fields": [
+        "nan",
+        "0.0"
+      ],
+      "old_complete_line": "a person kicks at something in front of him with his right foot, like a soccer motion.#a/DET person/NOUN kick/VERB at/ADP something/PRON in/ADP front/NOUN of/ADP him/PRON with/ADP his/DET right/ADJ foot/NOUN like/SCONJ a/DET soccer/NOUN motion/NOUN#nan#0.0",
+      "old_text_sha256": "5dbc27deeb305ebb5452dadfdf181bff3e57393926f456a30581b3e1188a43dd",
+      "old_line_sha256_utf8_without_newline": "df1175e7bd7ffdaaab99cc1cec25fb7c6ce1d9c0c780cbedf8f0defbea44df1e",
+      "relative_text_path": "texts/005760.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/periodic/all.txt",
+          "attributes/periodic/train.txt",
+          "attributes/periodic/train_val.txt",
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt",
+          "style/strike/all.txt",
+          "style/strike/train.txt",
+          "style/strike/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "006023",
+      "source": "HumanML3D",
+      "line": 3,
+      "old_caption": "a person reaches down towards their left leg and then goes back up to standing position",
+      "old_tokens": "a/DET person/NOUN reach/VERB down/ADP towards/ADP their/DET left/ADJ leg/NOUN and/CCONJ then/ADV go/VERB back/ADV up/ADV to/ADP standing/ADJ position/NOUN",
+      "old_time_fields": [
+        "nan",
+        "0.0"
+      ],
+      "old_complete_line": "a person reaches down towards their left leg and then goes back up to standing position#a/DET person/NOUN reach/VERB down/ADP towards/ADP their/DET left/ADJ leg/NOUN and/CCONJ then/ADV go/VERB back/ADV up/ADV to/ADP standing/ADJ position/NOUN#nan#0.0",
+      "old_text_sha256": "552e955908439b6fb234b5ebc3acbdd3d7933dd6ed9bb843702a002ca3f05682",
+      "old_line_sha256_utf8_without_newline": "120735527d996772e6c456fc28e5780ea9d6b5221544673e3fc35b6a7f65a27a",
+      "relative_text_path": "texts/006023.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt",
+          "content/circle/all.txt",
+          "content/circle/train.txt",
+          "content/circle/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "006103",
+      "source": "HumanML3D",
+      "line": 2,
+      "old_caption": "the person walks forward, turns counterclockwise and walks back to starting position.",
+      "old_tokens": "the/DET person/NOUN walk/VERB forward/ADV turn/VERB counterclockwise/NOUN and/CCONJ walk/VERB back/ADV to/ADP start/VERB position/NOUN",
+      "old_time_fields": [
+        "nan",
+        "0.0"
+      ],
+      "old_complete_line": "the person walks forward, turns counterclockwise and walks back to starting position.#the/DET person/NOUN walk/VERB forward/ADV turn/VERB counterclockwise/NOUN and/CCONJ walk/VERB back/ADV to/ADP start/VERB position/NOUN#nan#0.0",
+      "old_text_sha256": "94c79aae9478ea5c99c463b52cf5741a3e96bef5eba605b9232b2c0fe6156b68",
+      "old_line_sha256_utf8_without_newline": "477d1b8e28d5b4b3305fc65f73482f44aa7af41ed6b8a7f2785160d795e4779e",
+      "relative_text_path": "texts/006103.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/periodic/all.txt",
+          "attributes/periodic/train.txt",
+          "attributes/periodic/train_val.txt",
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt",
+          "content/circle/all.txt",
+          "content/circle/train.txt",
+          "content/circle/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "006610",
+      "source": "HumanML3D",
+      "line": 2,
+      "old_caption": "person starts out standing then leans to the right and stomps his left foot.",
+      "old_tokens": "person/NOUN start/VERB out/ADP stand/VERB then/ADV lean/VERB to/ADP the/DET right/NOUN and/CCONJ stomp/VERB his/DET left/ADJ foot/NOUN",
+      "old_time_fields": [
+        "nan",
+        "nan"
+      ],
+      "old_complete_line": "person starts out standing then leans to the right and stomps his left foot.#person/NOUN start/VERB out/ADP stand/VERB then/ADV lean/VERB to/ADP the/DET right/NOUN and/CCONJ stomp/VERB his/DET left/ADJ foot/NOUN#nan#nan",
+      "old_text_sha256": "9199a9fc5dc7e0e496774e94b433c1fff6585becf635e790e3e08d22e5683aca",
+      "old_line_sha256_utf8_without_newline": "2a4f13dc9e7bf2743f3e480fd0934b0c79fc476e6c81b6f0ebf8dd699d3262ae",
+      "relative_text_path": "texts/006610.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "007252",
+      "source": "HumanML3D",
+      "line": 3,
+      "old_caption": "a person moves his left arm down the top of his left leg.",
+      "old_tokens": "a/DET person/NOUN move/VERB his/DET left/ADJ arm/NOUN down/ADP the/DET top/NOUN of/ADP his/DET left/ADJ leg/NOUN",
+      "old_time_fields": [
+        "nan",
+        "nan"
+      ],
+      "old_complete_line": "a person moves his left arm down the top of his left leg.#a/DET person/NOUN move/VERB his/DET left/ADJ arm/NOUN down/ADP the/DET top/NOUN of/ADP his/DET left/ADJ leg/NOUN#nan#nan",
+      "old_text_sha256": "feb5f49ed17e58342f1e87b0f87b2062d3768dd876e7f3e93b399c5f4b19701f",
+      "old_line_sha256_utf8_without_newline": "6288d855203457e66aa3dfc802e4dcf21551d3d255be6f352129f663b247e5c3",
+      "relative_text_path": "texts/007252.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "007294",
+      "source": "HumanML3D",
+      "line": 3,
+      "old_caption": "a person steps to the right over an object.",
+      "old_tokens": "a/DET person/NOUN step/VERB to/ADP the/DET right/NOUN over/ADP an/DET object/NOUN",
+      "old_time_fields": [
+        "nan",
+        "0.0"
+      ],
+      "old_complete_line": "a person steps to the right over an object.#a/DET person/NOUN step/VERB to/ADP the/DET right/NOUN over/ADP an/DET object/NOUN#nan#0.0",
+      "old_text_sha256": "29bcaa7a2702c8ac42c3cc2f1d78db801ba3537615924d535b860746802e62f7",
+      "old_line_sha256_utf8_without_newline": "d4da55b2d9249c59059b6602f740c29be68f9c98506f455df0ab015afbd04eea",
+      "relative_text_path": "texts/007294.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "test",
+        "base263_split": "test",
+        "paper_benchmark_membership": [
+          "attributes/periodic/all.txt",
+          "attributes/periodic/test.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "007555",
+      "source": "HumanML3D",
+      "line": 2,
+      "old_caption": "a person walks forward, spins around, then walks back to where they were originally standing.",
+      "old_tokens": "a/DET person/NOUN walk/VERB forward/ADV spin/VERB around/ADV then/ADV walk/VERB back/ADV to/ADP where/ADV they/PRON were/AUX originally/ADV stand/VERB",
+      "old_time_fields": [
+        "nan",
+        "0.0"
+      ],
+      "old_complete_line": "a person walks forward, spins around, then walks back to where they were originally standing.#a/DET person/NOUN walk/VERB forward/ADV spin/VERB around/ADV then/ADV walk/VERB back/ADV to/ADP where/ADV they/PRON were/AUX originally/ADV stand/VERB#nan#0.0",
+      "old_text_sha256": "350f0191c96a689d590508715b7b353463efab39fef655b38b31ec53cf550685",
+      "old_line_sha256_utf8_without_newline": "9fcd3b7dec56b88bd591f060487379287ac31e71148c6dfe3d854cc886d27b51",
+      "relative_text_path": "texts/007555.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/periodic/all.txt",
+          "attributes/periodic/train.txt",
+          "attributes/periodic/train_val.txt",
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt",
+          "content/turn/all.txt",
+          "content/turn/train.txt",
+          "content/turn/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "007983",
+      "source": "HumanML3D",
+      "line": 2,
+      "old_caption": "a person does jumping jacks.",
+      "old_tokens": "a/DET person/NOUN does/AUX jump/VERB jack/NOUN",
+      "old_time_fields": [
+        "nan",
+        "0.0"
+      ],
+      "old_complete_line": "a person does jumping jacks.#a/DET person/NOUN does/AUX jump/VERB jack/NOUN#nan#0.0",
+      "old_text_sha256": "9f7b2513dd79eb0c6ece39a1084e58a74614e267a4991a0cbe8fa18ca525046f",
+      "old_line_sha256_utf8_without_newline": "56c2cd5b1f26f38fe7412555462bdf3eaa5a2a0e322f42ee737ac250dd03358d",
+      "relative_text_path": "texts/007983.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "008436",
+      "source": "HumanML3D",
+      "line": 2,
+      "old_caption": "a person places hands in front of him while bowing twice.",
+      "old_tokens": "a/DET person/NOUN place/VERB hand/NOUN in/ADP front/NOUN of/ADP him/PRON while/SCONJ bow/VERB twice/ADV",
+      "old_time_fields": [
+        "nan",
+        "0.0"
+      ],
+      "old_complete_line": "a person places hands in front of him while bowing twice.#a/DET person/NOUN place/VERB hand/NOUN in/ADP front/NOUN of/ADP him/PRON while/SCONJ bow/VERB twice/ADV#nan#0.0",
+      "old_text_sha256": "9e85f04603922a76bc28ed072f30d7e04d8fd38e81ec4e17da30f368e37af49b",
+      "old_line_sha256_utf8_without_newline": "a02f0e02afdb26d1c77cb0998b5b63d128e9781e18db9a5eefc88998f295c9b9",
+      "relative_text_path": "texts/008436.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "val",
+        "base263_split": "val",
+        "paper_benchmark_membership": [
+          "attributes/periodic/all.txt",
+          "attributes/periodic/train_val.txt",
+          "attributes/periodic/val.txt",
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train_val.txt",
+          "attributes/secondary_rich/val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "009551",
+      "source": "HumanML3D",
+      "line": 3,
+      "old_caption": "a person grabs his wrist and practices a putt.",
+      "old_tokens": "a/DET person/NOUN grab/VERB his/DET wrist/NOUN and/CCONJ practice/VERB a/DET putt/NOUN",
+      "old_time_fields": [
+        "nan",
+        "nan"
+      ],
+      "old_complete_line": "a person grabs his wrist and practices a putt.#a/DET person/NOUN grab/VERB his/DET wrist/NOUN and/CCONJ practice/VERB a/DET putt/NOUN#nan#nan",
+      "old_text_sha256": "f36b274426977afb0251a65cb3a052428fd67e936ed1587b55bf82936bbf199e",
+      "old_line_sha256_utf8_without_newline": "f9d6e33587bfbcb6aea24194887a37627b185492051f4a21ba9da7d807770f24",
+      "relative_text_path": "texts/009551.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt",
+          "style/balance/all.txt",
+          "style/balance/train.txt",
+          "style/balance/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "009613",
+      "source": "HumanML3D",
+      "line": 3,
+      "old_caption": "a person jogs backwards, diagonally.",
+      "old_tokens": "a/DET person/NOUN jog/VERB backwards/ADV diagonally/ADV",
+      "old_time_fields": [
+        "nan",
+        "0.0"
+      ],
+      "old_complete_line": "a person jogs backwards, diagonally.#a/DET person/NOUN jog/VERB backwards/ADV diagonally/ADV#nan#0.0",
+      "old_text_sha256": "ea61d1af33522c94575342f78838ac3bd75e755933afe5608d2499f115d78cb0",
+      "old_line_sha256_utf8_without_newline": "01855c4b77218a4ff4d4d8f1128dba7480c7d7789877c8eb8b7437476071baaf",
+      "relative_text_path": "texts/009613.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": false,
+        "training_pose69_split": null,
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/periodic/all.txt",
+          "attributes/periodic/train.txt",
+          "attributes/periodic/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "009658",
+      "source": "HumanML3D",
+      "line": 1,
+      "old_caption": "a person walks forward with their arms raised toward the ceiling.",
+      "old_tokens": "a/DET person/NOUN walk/VERB forward/ADV with/ADP their/DET arm/NOUN raise/VERB toward/ADP the/DET ceiling/NOUN",
+      "old_time_fields": [
+        "nan",
+        "nan"
+      ],
+      "old_complete_line": "a person walks forward with their arms raised toward the ceiling.#a/DET person/NOUN walk/VERB forward/ADV with/ADP their/DET arm/NOUN raise/VERB toward/ADP the/DET ceiling/NOUN#nan#nan",
+      "old_text_sha256": "1766e736fe5ba4243745fd2b1331b87cd692bba255c19baffba93c6e9679e40d",
+      "old_line_sha256_utf8_without_newline": "c36fb1a0c3b5c87f44d37aadc6d1420d2de41b84f1309665937bd53606baa814",
+      "relative_text_path": "texts/009658.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/periodic/all.txt",
+          "attributes/periodic/train.txt",
+          "attributes/periodic/train_val.txt",
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt",
+          "content/walk/all.txt",
+          "content/walk/train.txt",
+          "content/walk/train_val.txt",
+          "style/balance/all.txt",
+          "style/balance/train.txt",
+          "style/balance/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "011187",
+      "source": "HumanML3D",
+      "line": 2,
+      "old_caption": "a person walks in a half circle",
+      "old_tokens": "a/DET person/NOUN walk/VERB in/ADP a/DET half/ADJ circle/NOUN",
+      "old_time_fields": [
+        "nan",
+        "0.0"
+      ],
+      "old_complete_line": "a person walks in a half circle#a/DET person/NOUN walk/VERB in/ADP a/DET half/ADJ circle/NOUN#nan#0.0",
+      "old_text_sha256": "7ed5c247418e1b7d0d25bcb4605b9466a4871421d87831854af5f373077a2102",
+      "old_line_sha256_utf8_without_newline": "4be49c54b3ebb5209fa500c4e76e0a418a2ada38da2f355dfd51dde2d8192661",
+      "relative_text_path": "texts/011187.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "011710",
+      "source": "HumanML3D",
+      "line": 1,
+      "old_caption": "a man picks up both hands and motions like he is strumming a guitar slowly.",
+      "old_tokens": "a/DET man/NOUN pick/VERB up/ADP both/DET hand/NOUN and/CCONJ motion/NOUN like/SCONJ he/PRON is/AUX strum/VERB a/DET guitar/NOUN slowly/ADV",
+      "old_time_fields": [
+        "nan",
+        "nan"
+      ],
+      "old_complete_line": "a man picks up both hands and motions like he is strumming a guitar slowly.#a/DET man/NOUN pick/VERB up/ADP both/DET hand/NOUN and/CCONJ motion/NOUN like/SCONJ he/PRON is/AUX strum/VERB a/DET guitar/NOUN slowly/ADV#nan#nan",
+      "old_text_sha256": "501a14f2b21755a3190e2148374d03a5e2306777b18fd2c7c9de0e6c6abaa9cc",
+      "old_line_sha256_utf8_without_newline": "10650fdb34b6aba4d03fb41138ea408965a7568e11061023878ee63e164953ff",
+      "relative_text_path": "texts/011710.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "012107",
+      "source": "HumanML3D",
+      "line": 3,
+      "old_caption": "a person tries to walk forward in a straight line with their arms out.",
+      "old_tokens": "a/DET person/NOUN try/VERB to/PART walk/VERB forward/ADV in/ADP a/DET straight/ADJ line/NOUN with/ADP their/DET arm/NOUN out/ADP",
+      "old_time_fields": [
+        "nan",
+        "0.0"
+      ],
+      "old_complete_line": "a person tries to walk forward in a straight line with their arms out.#a/DET person/NOUN try/VERB to/PART walk/VERB forward/ADV in/ADP a/DET straight/ADJ line/NOUN with/ADP their/DET arm/NOUN out/ADP#nan#0.0",
+      "old_text_sha256": "771524e57eeac42e34fa7984992868884e6372297eccb103456587681207ca31",
+      "old_line_sha256_utf8_without_newline": "66d125a0fc9a9759d3abb55384bf29db60348b2a4d8fe5d1e2c59e8d62536fa1",
+      "relative_text_path": "texts/012107.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/periodic/all.txt",
+          "attributes/periodic/train.txt",
+          "attributes/periodic/train_val.txt",
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt",
+          "content/walk/all.txt",
+          "content/walk/train.txt",
+          "content/walk/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "012147",
+      "source": "HumanML3D",
+      "line": 1,
+      "old_caption": "a person side steps to their right with a large step.",
+      "old_tokens": "a/DET person/NOUN side/NOUN step/NOUN to/ADP their/DET right/NOUN with/ADP a/DET large/ADJ step/NOUN",
+      "old_time_fields": [
+        "nan",
+        "0.0"
+      ],
+      "old_complete_line": "a person side steps to their right with a large step.#a/DET person/NOUN side/NOUN step/NOUN to/ADP their/DET right/NOUN with/ADP a/DET large/ADJ step/NOUN#nan#0.0",
+      "old_text_sha256": "85ccba552c83420a41215cb94d531a895e5b4cff36ab891ea5771128af85745d",
+      "old_line_sha256_utf8_without_newline": "471cfe422c3999299e0ec8d4611700c227f5cc590a8d88bca41bfb41825205d0",
+      "relative_text_path": "texts/012147.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/periodic/all.txt",
+          "attributes/periodic/train.txt",
+          "attributes/periodic/train_val.txt",
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "012194",
+      "source": "HumanML3D",
+      "line": 1,
+      "old_caption": "a man begins walking, stumbles, and almost loses his balance before continuing on.",
+      "old_tokens": "a/DET man/NOUN begin/VERB walk/VERB stumble/NOUN and/CCONJ almost/ADV lose/VERB his/DET balance/NOUN before/ADP continue/VERB on/ADP",
+      "old_time_fields": [
+        "nan",
+        "0.0"
+      ],
+      "old_complete_line": "a man begins walking, stumbles, and almost loses his balance before continuing on.#a/DET man/NOUN begin/VERB walk/VERB stumble/NOUN and/CCONJ almost/ADV lose/VERB his/DET balance/NOUN before/ADP continue/VERB on/ADP#nan#0.0",
+      "old_text_sha256": "33c94e0aef1091bf9dfef4a9152b46c378208b35d72da29e50bc48f8665c5b50",
+      "old_line_sha256_utf8_without_newline": "a178908b010140921bcea23b6546c64b7dcc4f7a5cd6bc65cfba17ee8a55cd0c",
+      "relative_text_path": "texts/012194.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/periodic/all.txt",
+          "attributes/periodic/train.txt",
+          "attributes/periodic/train_val.txt",
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt",
+          "style/balance/all.txt",
+          "style/balance/train.txt",
+          "style/balance/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "012517",
+      "source": "HumanML3D",
+      "line": 3,
+      "old_caption": "a person walks forward, stops abruptly, and then walks directly backwards.",
+      "old_tokens": "a/DET person/NOUN walk/VERB forward/ADV stop/VERB abruptly/ADV and/CCONJ then/ADV walk/VERB directly/ADV backwards/ADV",
+      "old_time_fields": [
+        "nan",
+        "0.0"
+      ],
+      "old_complete_line": "a person walks forward, stops abruptly, and then walks directly backwards.#a/DET person/NOUN walk/VERB forward/ADV stop/VERB abruptly/ADV and/CCONJ then/ADV walk/VERB directly/ADV backwards/ADV#nan#0.0",
+      "old_text_sha256": "443eb3a42e8ac23717127f639d9d8f57b5b8d1a42fe6849bdb6a8072a30956ce",
+      "old_line_sha256_utf8_without_newline": "e128aa2877f0e1ce05adc6ef2c392ab9e61262b9b52a037ae8508eb1752ce273",
+      "relative_text_path": "texts/012517.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt",
+          "style/balance/all.txt",
+          "style/balance/train.txt",
+          "style/balance/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "012634",
+      "source": "HumanML3D",
+      "line": 1,
+      "old_caption": "a person is walking down some steps from the top to the bottom.",
+      "old_tokens": "a/DET person/NOUN is/AUX walk/VERB down/ADP some/DET step/NOUN from/ADP the/DET top/NOUN to/ADP the/DET bottom/NOUN",
+      "old_time_fields": [
+        "nan",
+        "0.0"
+      ],
+      "old_complete_line": "a person is walking down some steps from the top to the bottom.#a/DET person/NOUN is/AUX walk/VERB down/ADP some/DET step/NOUN from/ADP the/DET top/NOUN to/ADP the/DET bottom/NOUN#nan#0.0",
+      "old_text_sha256": "00f7ab7caa368f0038fa8068d1090dfde083aaf61b080fc23614f15d9e1ef6fc",
+      "old_line_sha256_utf8_without_newline": "a86c20bb93330e280811bcb49de97c519a87296c318b81a6807f238e7def84ad",
+      "relative_text_path": "texts/012634.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/periodic/all.txt",
+          "attributes/periodic/train.txt",
+          "attributes/periodic/train_val.txt",
+          "content/walk/all.txt",
+          "content/walk/train.txt",
+          "content/walk/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "012877",
+      "source": "HumanML3D",
+      "line": 3,
+      "old_caption": "the man is doing extra fancy charleston",
+      "old_tokens": "the/DET man/NOUN is/AUX do/VERB extra/ADJ fancy/ADJ charleston/PROPN",
+      "old_time_fields": [
+        "nan",
+        "0.0"
+      ],
+      "old_complete_line": "the man is doing extra fancy charleston#the/DET man/NOUN is/AUX do/VERB extra/ADJ fancy/ADJ charleston/PROPN#nan#0.0",
+      "old_text_sha256": "cdd30d7a6a63f2ba4bce383136b24afb7c281fc446a1f4b72a874bcd5e90e51d",
+      "old_line_sha256_utf8_without_newline": "c884f3b3435784ea5180182083454b33a40c88b9ed1b84a6e6859db5e31ce553",
+      "relative_text_path": "texts/012877.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "013724",
+      "source": "HumanML3D",
+      "line": 2,
+      "old_caption": "stick figure is running in a straight line",
+      "old_tokens": "stick/PROPN figure/NOUN is/AUX run/VERB in/ADP a/DET straight/ADJ line/NOUN",
+      "old_time_fields": [
+        "nan",
+        "2.0"
+      ],
+      "old_complete_line": "stick figure is running in a straight line#stick/PROPN figure/NOUN is/AUX run/VERB in/ADP a/DET straight/ADJ line/NOUN#nan#2.0",
+      "old_text_sha256": "af73a054bf5c4af96999c8d300e34849b7561eabc5cfd03aa3af9740fa2a5984",
+      "old_line_sha256_utf8_without_newline": "095a09622c281e8a96e318e4031f188fac89f8f25b9b6fcf81ddac5597eb2bab",
+      "relative_text_path": "texts/013724.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        2.0
+      ],
+      "historical_interpretation_is_whole_clip": false,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": false,
+        "training_pose69_split": null,
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/periodic/all.txt",
+          "attributes/periodic/train.txt",
+          "attributes/periodic/train_val.txt",
+          "content/run/all.txt",
+          "content/run/train.txt",
+          "content/run/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "013894",
+      "source": "HumanML3D",
+      "line": 3,
+      "old_caption": "image raises both arms and claps both left and right hands together.",
+      "old_tokens": "image/NOUN raise/VERB both/CCONJ arm/NOUN and/CCONJ clap/NOUN both/DET left/ADJ and/CCONJ right/ADJ hand/NOUN together/ADV",
+      "old_time_fields": [
+        "nan",
+        "0.0"
+      ],
+      "old_complete_line": "image raises both arms and claps both left and right hands together.#image/NOUN raise/VERB both/CCONJ arm/NOUN and/CCONJ clap/NOUN both/DET left/ADJ and/CCONJ right/ADJ hand/NOUN together/ADV#nan#0.0",
+      "old_text_sha256": "1273bc421974f1849731cf612f97426f0fbeae0067116c59d4e7727608120b23",
+      "old_line_sha256_utf8_without_newline": "dc972d65197f0c48c06cd98f951f1354480cdcdb97b428d9dc12a54a8c26a687",
+      "relative_text_path": "texts/013894.txt",
+      "issue": "legacy_nan_time_loader_compatibility",
+      "recommended_action": "preserve_original_and_document_loader_nan_compatibility_or_explicit_versioned_normalization",
+      "explanation": "NaN time strings are inherited formatting/loader compatibility issues, not evidence of an incorrect action caption. The historical loader maps each NaN independently to 0.0. This audit does not assert that interpretation is the true intended interval.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.0,
+        0.0
+      ],
+      "historical_interpretation_is_whole_clip": true,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "000912",
+      "source": "HumanML3D",
+      "line": 1,
+      "old_caption": "walking forward with both hands swinging",
+      "old_tokens": "walk/VERB forward/ADV with/ADP both/DET hand/NOUN swinge/VERB",
+      "old_time_fields": [
+        "2.0",
+        "2.0"
+      ],
+      "old_complete_line": "walking forward with both hands swinging#walk/VERB forward/ADV with/ADP both/DET hand/NOUN swinge/VERB#2.0#2.0",
+      "old_text_sha256": "1d63c3704e95b84e5d108654548521c978cbf61ef19aa2932eaa97bd0473886d",
+      "old_line_sha256_utf8_without_newline": "440b96e523916a9421cea6ecd87e4b28fcb225ec2b0e3641022ddc88dd53bb27",
+      "relative_text_path": "texts/000912.txt",
+      "issue": "invalid_nonzero_empty_interval",
+      "recommended_action": "quarantine_selected_line_pending_interval_recovery_keep_other_lines",
+      "explanation": "The nonzero interval has equal start/end and selects no duration. Do not replace it by 0#0, which changes its meaning to the whole clip. Other full-clip captions in this file remain available; recover an interval from upstream evidence or omit only this annotation in a separate usable view.",
+      "historical_loader_nan_to_zero_interpretation": [
+        2.0,
+        2.0
+      ],
+      "historical_interpretation_is_whole_clip": false,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": true,
+        "training_pose69_split": "train",
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "attributes/periodic/all.txt",
+          "attributes/periodic/train.txt",
+          "attributes/periodic/train_val.txt",
+          "attributes/secondary_rich/all.txt",
+          "attributes/secondary_rich/train.txt",
+          "attributes/secondary_rich/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    },
+    {
+      "id": "010305",
+      "source": "HumanML3D",
+      "line": 1,
+      "old_caption": "both arms raise to the right, hit throw",
+      "old_tokens": "both/DET arm/NOUN raise/VERB to/ADP the/DET right/NOUN hit/VERB throw/NOUN",
+      "old_time_fields": [
+        "0.5",
+        "0.5"
+      ],
+      "old_complete_line": "both arms raise to the right, hit throw#both/DET arm/NOUN raise/VERB to/ADP the/DET right/NOUN hit/VERB throw/NOUN#0.5#0.5",
+      "old_text_sha256": "96e207f4370d25a4f2df2aa521b64d67520297039a387749ebe365cc1469c14b",
+      "old_line_sha256_utf8_without_newline": "3fb6c45d1898973f499eb9137d587a3e7b7948ab94963614412544fc18748ea5",
+      "relative_text_path": "texts/010305.txt",
+      "issue": "invalid_nonzero_empty_interval",
+      "recommended_action": "quarantine_selected_line_pending_interval_recovery_keep_other_lines",
+      "explanation": "The nonzero interval has equal start/end and selects no duration. Do not replace it by 0#0, which changes its meaning to the whole clip. Other full-clip captions in this file remain available; recover an interval from upstream evidence or omit only this annotation in a separate usable view.",
+      "historical_loader_nan_to_zero_interpretation": [
+        0.5,
+        0.5
+      ],
+      "historical_interpretation_is_whole_clip": false,
+      "replacement_caption": null,
+      "other_original_line_count": 2,
+      "stratification": {
+        "pose69_available": false,
+        "training_pose69_split": null,
+        "base263_split": "train",
+        "paper_benchmark_membership": [
+          "style/strike/all.txt",
+          "style/strike/train.txt",
+          "style/strike/train_val.txt"
+        ],
+        "paper_locked": false
+      }
+    }
+  ]
+}

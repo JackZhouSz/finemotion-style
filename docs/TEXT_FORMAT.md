@@ -28,6 +28,17 @@ For this example, a short right-hand-wave sentence was reviewed against the moti
 
 An optional `tokens` string can preserve existing annotations. Repeated IDs produce multiple lines in the same text file. This JSONL schema is the formatter's interface; historical VLM logs using `caption_main`/`caption_details` need an explicit field mapping first.
 
+Use the supplied adapter for that mapping:
+
+```bash
+python scripts/text/caption_fields_to_jsonl.py --input-jsonl historical_captions.jsonl --output-jsonl captions_for_formatter.jsonl
+python scripts/prepare_training_texts.py --input-jsonl captions_for_formatter.jsonl --output-dir texts --profile legacy_finemotion
+```
+
+The adapter preserves literal MAIN/DETAILS captions, IDs, existing token fields and time strings. Duplicate prediction records require an explicit selection policy; it does not choose a new prediction or rewrite a sentence silently. See `python scripts/text/caption_fields_to_jsonl.py --help` and the [source pipeline](SOURCE_RECONSTRUCTION.md). Source labels are part of the historical prompt context, so a generated sentence is not necessarily an independent visual classification of style.
+
+Preserve source IDs, including commas or parentheses in Motion-X names; changing an ID would break its motion and split mappings. An ID must be a single filename stem: path separators, control characters, `.` and `..` are rejected. Windows also rejects its reserved filenames and characters. If an original ID cannot be represented on Windows, export that source on Linux without renaming it.
+
 ## Install the tokenizer
 
 ```bash
@@ -102,3 +113,11 @@ A training run also requires matching motion features, splits, Mean/Std, vocabul
 Both tokenizer profiles were compared against their reference rules on real spaCy inputs, including a complete CLI export. The sample text passes field/time/token validation. New descriptions still require visual review.
 
 The reference profile credits HumanML3D (Chuan Guo); its MIT notice is in `licenses/HUMANML3D_REPOSITORY_LICENSE.txt`. Formatting does not replace the copyright/license of an upstream sentence. Future annotations will be distributed with source-specific provenance and notices.
+
+## Original, paper-exact and compatibility views
+
+The original snapshot retains historical bytes. The paper-exact view applies only the eight author-locked caption fields; five files differ only in sentence case or the final period, so their existing lemma/POS and time fields are retained. Each affected file and selected line has an old/new hash record. Other captions in those files remain separate alternatives, even where they disagree with the selected paper sentence.
+
+Known production issues are recorded separately: 44 pure dialogue/refusal/grammar outputs, two nonzero empty intervals and 49 inherited NaN-time lines. These are distinct from the Qwen video-review proposals. A derived compatibility view may explicitly quarantine those 44 clips and two lines and apply the historical loader's NaN-to-zero rule; it must retain its own change ledger and projected ID lists. One NaN line becomes 0–2 seconds, so NaN must not be assumed to mean a full clip. Do not reinterpret an empty nonzero interval as `0#0`.
+
+See the [release guide](RELEASE_V1.md) for data scope and the distinction between historical lists and a derived usable view. A model's K verdict is not a proof of every visual detail, and R is a proposal requiring evidence, not an instruction to overwrite text.

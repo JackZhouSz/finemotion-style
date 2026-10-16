@@ -1,0 +1,215 @@
+{
+  "schema_version": 1,
+  "prepared_for_release_date_jst": "2026-10-16",
+  "role": "Recovered project motion-conversion code; original layout/write assumptions retained",
+  "files": [
+    {
+      "file": "BVHtoSmpl_LaFAN1.py",
+      "original_filename": "PuppetToSmpl_LaFAN1.py",
+      "historical_project_relative_path": "datasets/raw/LaFAN1_to_smpl/PuppetToSmpl_LaFAN1.py",
+      "original_source_sha256": "aac54fcb6aac61579216571ee69514c52ab26431b41c9341610306ae21c6511e",
+      "sha256": "aac54fcb6aac61579216571ee69514c52ab26431b41c9341610306ae21c6511e",
+      "byte_identity_with_original": true,
+      "filename_only_rename": true,
+      "adaptation": null
+    },
+    {
+      "file": "step3_finalize_npz_LaFAN1.py",
+      "original_filename": "step3_finalize_npz_LaFAN1.py",
+      "historical_project_relative_path": "datasets/raw/LaFAN1_to_smpl/step3_finalize_npz_LaFAN1.py",
+      "original_source_sha256": "edd51a91d427cb3c97b0357f50022a2336c92bd6e3e19ccc5f9adcb0a24edb3b",
+      "sha256": "edd51a91d427cb3c97b0357f50022a2336c92bd6e3e19ccc5f9adcb0a24edb3b",
+      "byte_identity_with_original": true,
+      "filename_only_rename": false,
+      "adaptation": null
+    },
+    {
+      "file": "convert_humanml3d_amass_npz_to_smpl_npz.py",
+      "original_filename": "convert_humanml3d_amass_npz_to_smpl_npz.py",
+      "historical_project_relative_path": "tools/convert_humanml3d_amass_npz_to_smpl_npz.py",
+      "original_source_sha256": "b0406338a8f97bb52d65fd89de4700f7a07b3816c165ca8298b3d2c4b8e40752",
+      "sha256": "b0406338a8f97bb52d65fd89de4700f7a07b3816c165ca8298b3d2c4b8e40752",
+      "byte_identity_with_original": true,
+      "filename_only_rename": false,
+      "adaptation": null
+    },
+    {
+      "file": "export_humanml3d_clips_30hz_to_finemotion.py",
+      "original_filename": "export_humanml3d_clips_30hz_to_finemotion.py",
+      "historical_project_relative_path": "tools/export_humanml3d_clips_30hz_to_finemotion.py",
+      "original_source_sha256": "199191a19c49ca678cb3c1d064e457cf35738a5e7cc5f62fb52b3b446576b0db",
+      "sha256": "199191a19c49ca678cb3c1d064e457cf35738a5e7cc5f62fb52b3b446576b0db",
+      "byte_identity_with_original": true,
+      "filename_only_rename": false,
+      "adaptation": null
+    },
+    {
+      "file": "convert_motionx_smplx322_to_smpl24_npz.py",
+      "original_filename": "convert_motionx_smplx322_to_smpl24_npz.py",
+      "historical_project_relative_path": "tools/convert_motionx_smplx322_to_smpl24_npz.py",
+      "original_source_sha256": "18328c7ad93bc93fe0838e5701c45941e8e747189e0b111002d66d65ef81e2fa",
+      "sha256": "18328c7ad93bc93fe0838e5701c45941e8e747189e0b111002d66d65ef81e2fa",
+      "byte_identity_with_original": true,
+      "filename_only_rename": false,
+      "adaptation": null
+    },
+    {
+      "file": "select_motionx_clean_subset.py",
+      "original_filename": "select_motionx_clean_subset.py",
+      "historical_project_relative_path": "tools/select_motionx_clean_subset.py",
+      "original_source_sha256": "31f42148ed1ba0e5ff20e8f1dc1dc47d20e6010045235e5516b9796fbf99434b",
+      "sha256": "31f42148ed1ba0e5ff20e8f1dc1dc47d20e6010045235e5516b9796fbf99434b",
+      "byte_identity_with_original": true,
+      "filename_only_rename": false,
+      "adaptation": null
+    },
+    {
+      "file": "add_motorica_finedance_to_finemotion.py",
+      "original_filename": "add_motorica_finedance_to_finemotion.py",
+      "historical_project_relative_path": "tools/add_motorica_finedance_to_finemotion.py",
+      "original_source_sha256": "fe813466482911cfa3f0637bb17a45c0798a98e8983920d95f82fc311917c52f",
+      "sha256": "fe813466482911cfa3f0637bb17a45c0798a98e8983920d95f82fc311917c52f",
+      "byte_identity_with_original": true,
+      "filename_only_rename": false,
+      "adaptation": null
+    },
+    {
+      "file": "build_finemotion_humanml3d263_dataset.py",
+      "original_filename": "build_finemotion_humanml3d263_dataset.py",
+      "historical_project_relative_path": "tools/build_finemotion_humanml3d263_dataset.py",
+      "original_source_sha256": "9677f7f74efa925ebf664ee5573cad58aec4966ef93056fc57e58da5519b84bb",
+      "sha256": "b020a2333bf86d850ff819d9bc8b65469016946e9b9e5a5f0636e7795d724c48",
+      "byte_identity_with_original": false,
+      "filename_only_rename": false,
+      "adaptation": "Removed 15 embedded upstream LaFAN1 README descriptions. Explicit --lafan-theme-map is required when selecting LaFAN1; selected themes are preflighted before output/SMPL loading; source metadata hash is saved. Motion/segmentation/split/statistics algorithms unchanged."
+    },
+    {
+      "file": "convert_finemotion_smpl_npz_to_humanml3d_vecs.py",
+      "original_filename": "convert_finemotion_smpl_npz_to_humanml3d_vecs.py",
+      "historical_project_relative_path": "tools/convert_finemotion_smpl_npz_to_humanml3d_vecs.py",
+      "original_source_sha256": "e2de9c845a20212906cfd15a502f08e6cd395d9ad49dfcdcdcbbc2d056c5ba1f",
+      "sha256": "e2de9c845a20212906cfd15a502f08e6cd395d9ad49dfcdcdcbbc2d056c5ba1f",
+      "byte_identity_with_original": true,
+      "filename_only_rename": false,
+      "adaptation": null
+    }
+  ],
+  "unchanged_byte_snapshots": 8,
+  "metadata_adaptations": 1,
+  "filename_only_renames": 1,
+  "attribution": {
+    "project_code": "FineMotion processing workspace, copyright Ran Dong; see project LICENSE",
+    "shared_bvh_implementation": "tempo-changing-music2motion (2025), imported separately; see licenses/TEMPO_CODE_LICENSE.txt",
+    "feature_implementation": "MCM-LDM / HumanML3D motion processing imported separately; retain their applicable notices and terms",
+    "model_assets": "SMPL / MotionBuilder assets obtained separately; no model assets or weights bundled",
+    "source_metadata": "User-acquired upstream metadata; not bundled or relicensed by project code"
+  },
+  "source_motion_files_bundled": 0,
+  "body_model_files_bundled": 0,
+  "third_party_implementation_tree_bundled": false,
+  "historical_local_paths": [
+    {
+      "file": "historical/BVHtoSmpl_LaFAN1.py",
+      "line": 15,
+      "role": "historical local path placeholder; not a private URL or credential"
+    },
+    {
+      "file": "historical/BVHtoSmpl_LaFAN1.py",
+      "line": 62,
+      "role": "historical local path placeholder; not a private URL or credential"
+    },
+    {
+      "file": "historical/BVHtoSmpl_LaFAN1.py",
+      "line": 76,
+      "role": "historical local path placeholder; not a private URL or credential"
+    },
+    {
+      "file": "historical/BVHtoSmpl_LaFAN1.py",
+      "line": 82,
+      "role": "historical local path placeholder; not a private URL or credential"
+    },
+    {
+      "file": "historical/step3_finalize_npz_LaFAN1.py",
+      "line": 7,
+      "role": "historical local path placeholder; not a private URL or credential"
+    },
+    {
+      "file": "historical/step3_finalize_npz_LaFAN1.py",
+      "line": 10,
+      "role": "historical local path placeholder; not a private URL or credential"
+    },
+    {
+      "file": "historical/step3_finalize_npz_LaFAN1.py",
+      "line": 11,
+      "role": "historical local path placeholder; not a private URL or credential"
+    },
+    {
+      "file": "historical/step3_finalize_npz_LaFAN1.py",
+      "line": 21,
+      "role": "historical local path placeholder; not a private URL or credential"
+    },
+    {
+      "file": "historical/step3_finalize_npz_LaFAN1.py",
+      "line": 31,
+      "role": "historical local path placeholder; not a private URL or credential"
+    },
+    {
+      "file": "historical/convert_humanml3d_amass_npz_to_smpl_npz.py",
+      "line": 7,
+      "role": "historical local path placeholder; not a private URL or credential"
+    },
+    {
+      "file": "historical/export_humanml3d_clips_30hz_to_finemotion.py",
+      "line": 224,
+      "role": "historical local path placeholder; not a private URL or credential"
+    },
+    {
+      "file": "historical/convert_motionx_smplx322_to_smpl24_npz.py",
+      "line": 386,
+      "role": "historical local path placeholder; not a private URL or credential"
+    },
+    {
+      "file": "historical/select_motionx_clean_subset.py",
+      "line": 26,
+      "role": "historical local path placeholder; not a private URL or credential"
+    },
+    {
+      "file": "historical/build_finemotion_humanml3d263_dataset.py",
+      "line": 19,
+      "role": "historical local path placeholder; not a private URL or credential"
+    },
+    {
+      "file": "historical/build_finemotion_humanml3d263_dataset.py",
+      "line": 405,
+      "role": "historical local path placeholder; not a private URL or credential"
+    },
+    {
+      "file": "historical/build_finemotion_humanml3d263_dataset.py",
+      "line": 438,
+      "role": "historical local path placeholder; not a private URL or credential"
+    },
+    {
+      "file": "historical/convert_finemotion_smpl_npz_to_humanml3d_vecs.py",
+      "line": 27,
+      "role": "historical local path placeholder; not a private URL or credential"
+    },
+    {
+      "file": "historical/convert_finemotion_smpl_npz_to_humanml3d_vecs.py",
+      "line": 630,
+      "role": "historical local path placeholder; not a private URL or credential"
+    },
+    {
+      "file": "historical/convert_finemotion_smpl_npz_to_humanml3d_vecs.py",
+      "line": 653,
+      "role": "historical local path placeholder; not a private URL or credential"
+    },
+    {
+      "file": "README.md",
+      "line": 21,
+      "role": "historical local path placeholder; not a private URL or credential"
+    }
+  ],
+  "private_urls_found": 0,
+  "credential_pattern_candidates": 0,
+  "full_motion_reconstruction_verified": false
+}

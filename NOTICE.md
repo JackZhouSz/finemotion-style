@@ -26,6 +26,14 @@ Mesh previews use a separately obtained SMPL neutral model with zero shape coeff
 
 Motion parameters, model assets, and software have distinct provenance and license scope. The MIT software license does not override motion-data or model-asset terms.
 
-## Future sources
+## Source-scoped text annotations
 
-Other source motions are acquired by users from their original providers. Future text/manifest downloads will retain source-specific notices; this example release does not claim redistribution rights over the full integrated corpus.
+The prepared original text download covers HumanML3D, Motion-X and Bandai, with each source identified in its manifest. HumanML3D captions and tokens are inherited from the upstream repository, Copyright (c) 2022 Chuan Guo, under its retained MIT notice in `licenses/HUMANML3D_REPOSITORY_LICENSE.txt`. FineMotion maps the selected source captions to clip IDs; the paper-exact changes only sentence case or final punctuation in selected fields.
+
+Motion-X annotations, Copyright (c) 2023 The International Digital Economy Academy and their respective authors, are licensed under **CC BY-NC-SA 4.0**. FineMotion inherits the sentences and adds/maps HumanML3D-format lemma/POS and time fields. The annotations and adaptations retain attribution, noncommercial and ShareAlike terms, the modification history and the original disclaimer. See `licenses/MOTIONX_ANNOTATIONS_LICENSE.pdf`, [Motion-X](https://github.com/IDEA-Research/Motion-X) and [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). This does not grant rights to redistribute the underlying motions or separate subset assets.
+
+Bandai's MAIN label anchors and generated DETAILS are offered by Ran Dong, © 2026, under CC BY-NC 4.0, with the original Bandai attribution and modification notices retained. Both dataset-1 and dataset-2 source terms are CC BY-NC 4.0. Their licences accompany the separate full Bandai archive; this repository's bundled motion example remains dataset-2 as identified above.
+
+The captions embedded in `release_metadata/junk_safe_exclusion_manifest.json` are Motion-X annotations and retain CC BY-NC-SA 4.0; placing them next to software does not make them MIT. The inherited HumanML3D captions in `release_metadata/format_issue_ledger.json` and `release_metadata/temporal_issue_001034.json` retain their upstream notice. These ledgers identify bounded issues and do not invent replacement descriptions. The eight-example verification record is an author-locked paper reference, not a declaration that the full eight source clip files are in every download.
+
+Other source motions are acquired by users from their providers. The current LAFAN1, Motorica and FineDance mixed label-derived annotation components are outside the prepared public text download while their scope is resolved. The inspected terms do not expressly prohibit every independent new factual description, but do not settle this complete mixed component's redistribution scope either. The public LaFAN context builder consumes user-obtained metadata; it does not bundle the official theme-description table. See `docs/RELEASE_V1.md` and `docs/SOURCE_RECONSTRUCTION.md`.
