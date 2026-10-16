@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "prepared_date_JST": "2026-10-16",
-  "notes": "Selected archives are prepared, not uploaded. Null URLs do not claim hosted downloads. Retained three-source text and prior Bandai packaging are not selected for the initial HF upload.",
+  "notes": "The frozen ID archive is distributed directly in this GitHub repository. The two Bandai archives are public on Hugging Face, with unauthenticated size and SHA256 metadata verified. Retained three-source text and prior Bandai packaging remain staging alternatives; their null URLs do not claim hosted downloads.",
   "archives": [
     {
       "kind": "source_scoped_text",
@@ -38,36 +38,44 @@
       "filename": "finemotion_bandai_original_v1_20261016_en.tar.gz",
       "bytes": 378147152,
       "sha256": "cc6f34c53da3881f5a8a5afa6538125b0b0473c31cbfc8176ee574178d920e3e",
-      "external_download_url": null,
-      "status": "prepared_for_initial_hf_upload",
+      "external_download_url": "https://huggingface.co/datasets/randong/FineMotion-Style/resolve/main/finemotion_bandai_original_v1_20261016_en.tar.gz?download=true",
+      "status": "hosted_on_hugging_face",
       "initial_hf_selected": true,
       "SMPL24_source_sequences": 3077,
       "paired_20hz_windows": 2676,
       "data_version": "original_v1",
       "packaging_revision": "2026-10-16 English",
       "motion_feature_caption_split_bytes_unchanged_from_20261014": true,
-      "source_terms": "CC-BY-NC-4.0"
+      "source_terms": "CC-BY-NC-4.0",
+      "hosting_provider": "Hugging Face",
+      "dataset_repository": "randong/FineMotion-Style",
+      "dataset_revision": "add5e72a56082bbbe105e59a1ac2a4602e4a7c2a",
+      "revision_pinned_download_url": "https://huggingface.co/datasets/randong/FineMotion-Style/resolve/add5e72a56082bbbe105e59a1ac2a4602e4a7c2a/finemotion_bandai_original_v1_20261016_en.tar.gz?download=true",
+      "remote_public_size_and_sha256_verified": true
     },
     {
       "kind": "frozen_protocol_ids",
       "filename": "finemotion_frozen_protocol_v1_20261016.tar.gz",
       "bytes": 7944168,
       "sha256": "3209df832ac2729e30c1544bf1eb56e954179f4033efeb71a7588b27b4bd1a49",
-      "external_download_url": null,
-      "status": "prepared_for_initial_hf_upload",
-      "initial_hf_selected": true,
+      "external_download_url": "https://github.com/dongran/finemotion-style/raw/refs/heads/main/protocols/finemotion_frozen_protocol_v1_20261016.tar.gz",
+      "status": "hosted_in_github_repository",
+      "initial_hf_selected": false,
       "frozen_id_list_files": 292,
       "caption_motion_or_model_files": 0,
       "source_scope": "full six-source protocol membership only",
-      "terms": "MIT project protocol material; upstream data rights not included"
+      "terms": "MIT project protocol material; upstream data rights not included",
+      "hosting_provider": "GitHub",
+      "repository_path": "protocols/finemotion_frozen_protocol_v1_20261016.tar.gz",
+      "initial_release_selected": true
     },
     {
       "kind": "bandai_bvh_companion",
       "filename": "finemotion_bandai_bvh_companion_v1_20261016_en.tar.gz",
       "bytes": 233185636,
       "sha256": "aa38adb889fec05cf4dd2976bf86b8b94165846061ffdd4bec4d7443e1210fad",
-      "external_download_url": null,
-      "status": "prepared_for_initial_hf_upload",
+      "external_download_url": "https://huggingface.co/datasets/randong/FineMotion-Style/resolve/main/finemotion_bandai_bvh_companion_v1_20261016_en.tar.gz?download=true",
+      "status": "hosted_on_hugging_face",
       "initial_hf_selected": true,
       "native_bvh_files": 3077,
       "smpl_derived_bvh_files": 3077,
@@ -76,8 +84,13 @@
       "motion_terms": "CC-BY-NC-4.0 Bandai motion",
       "rig_terms": "CC-BY-4.0 SMPL-Body rig attribution",
       "derived_stage": "Later SMPL-cache-to-BVH export, not original MotionBuilder export",
-      "all_tar_regular_member_hashes_verified": true
+      "all_tar_regular_member_hashes_verified": true,
+      "hosting_provider": "Hugging Face",
+      "dataset_repository": "randong/FineMotion-Style",
+      "dataset_revision": "add5e72a56082bbbe105e59a1ac2a4602e4a7c2a",
+      "revision_pinned_download_url": "https://huggingface.co/datasets/randong/FineMotion-Style/resolve/add5e72a56082bbbe105e59a1ac2a4602e4a7c2a/finemotion_bandai_bvh_companion_v1_20261016_en.tar.gz?download=true",
+      "remote_public_size_and_sha256_verified": true
     }
   ],
-  "initial_hosting_plan": "Hugging Face Dataset: Bandai motion/text, BVH companion and separate frozen protocol IDs; other five sources acquired officially and processed locally."
+  "initial_hosting_plan": "GitHub: frozen protocol ID archive. Hugging Face Dataset: Bandai SMPL/features/text and the Bandai BVH companion. Other five sources acquired officially and processed locally."
 }

@@ -8,7 +8,14 @@ The benchmark integrates CG motion data from multiple sources, focusing on prese
 
 ## Release materials
 
-This repository provides **one complete Bandai Namco conversion example**, source reconstruction code, the text preparation pipeline, and frozen benchmark construction rules. The first hosted release is planned for a Hugging Face **Dataset** repository: Bandai motion and text, plus source-independent frozen protocol ID lists. The other five sources are obtained from their official providers and processed locally. See the [release guide](docs/RELEASE_V1.md) for source scope and the [dataset card draft](huggingface/README.md) for the hosting plan. Download links will be added after upload.
+This repository provides **one complete Bandai Namco conversion example**, source reconstruction code, the text preparation pipeline, and frozen benchmark construction rules. The **292 frozen split/benchmark ID lists are included here on GitHub**: [download the protocol archive](https://github.com/dongran/finemotion-style/raw/refs/heads/main/protocols/finemotion_frozen_protocol_v1_20261016.tar.gz) · [contents and checksum](protocols/README.md).
+
+The two larger Bandai archives are hosted in the [Hugging Face Dataset](https://huggingface.co/datasets/randong/FineMotion-Style):
+
+- [Bandai SMPL24 motions, HumanML263 features and texts](https://huggingface.co/datasets/randong/FineMotion-Style/resolve/main/finemotion_bandai_original_v1_20261016_en.tar.gz?download=true).
+- [Bandai native and SMPL-derived BVH companion](https://huggingface.co/datasets/randong/FineMotion-Style/resolve/main/finemotion_bandai_bvh_companion_v1_20261016_en.tar.gz?download=true).
+
+The other five sources are obtained from their official providers and processed locally. See the [release guide](docs/RELEASE_V1.md) for source scope and the [dataset card](huggingface/README.md) for the hosted data description.
 
 The [Bandai BVH companion](docs/BANDAI_BVH_COMPANION.md) adds original source BVH and the matching SMPL-derived BVH view, with their stages identified separately.
 

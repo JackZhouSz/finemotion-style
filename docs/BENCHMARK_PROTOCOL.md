@@ -1,5 +1,15 @@
 # Caption-derived benchmarks and frozen splits
 
+The **292 frozen split/benchmark ID lists are included on GitHub** in
+[`protocols/finemotion_frozen_protocol_v1_20261016.tar.gz`](../protocols/finemotion_frozen_protocol_v1_20261016.tar.gz)
+([direct download](https://github.com/dongran/finemotion-style/raw/refs/heads/main/protocols/finemotion_frozen_protocol_v1_20261016.tar.gz)).
+The archive is 7,944,168 bytes; its SHA256 is
+`3209df832ac2729e30c1544bf1eb56e954179f4033efeb71a7588b27b4bd1a49`.
+See the [package guide and checksum instructions](../protocols/README.md).
+It contains frozen memberships and package metadata, with no source captions,
+motion arrays or model assets. The two larger Bandai data archives are hosted
+separately in the [Hugging Face Dataset](https://huggingface.co/datasets/randong/FineMotion-Style).
+
 The training corpus, strict style benchmark and qualitative paper examples have different roles. The saved pose69-valid corpus contains **59,038** segments: **47,236 train / 5,866 validation / 5,936 test**. General model training uses the complete training split across sources, including clips outside the four style families. Validation and test clips are separate. The style benchmark does not limit training to its labeled subset.
 
 The paper reports 59,039 normalized clips. The archived available-ID and partition files contain 59,038; this historical one-clip difference remains unresolved. The release preserves the saved IDs and does not add a replacement clip to match the reported number.
@@ -113,7 +123,8 @@ when a VLM generates different sentences:
 5. If new captions are used to regenerate class memberships, publish a new
    benchmark version with its own counts and mappings.
 
-The separate protocol archive contains the frozen ID lists only. Source files,
+The [protocol archive included on GitHub](../protocols/README.md) contains frozen
+ID lists and package metadata only. Source files,
 source-to-crop ledgers, converted arrays, original full annotations and model
 assets must be obtained or reconstructed separately as described in
 [source reconstruction](SOURCE_RECONSTRUCTION.md).

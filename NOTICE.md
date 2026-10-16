@@ -44,12 +44,18 @@ target FBX/template is included in that companion.
 
 ## Source-scoped text annotations
 
-The selected initial Hugging Face bulk release contains Bandai motion/text and
-a separate frozen protocol-ID archive. Users acquire the other five sources
-from their official providers and process them locally. The previously prepared
-three-source text archive described below is retained as a staging alternative,
-not selected for the initial hosted download. Source-licensed issue/reference
-excerpts in this code repository are distinct from a bulk annotation corpus.
+The two large archives hosted in the
+[Hugging Face Dataset](https://huggingface.co/datasets/randong/FineMotion-Style)
+contain Bandai motion/text and the Bandai BVH companion. The separate 292-list frozen
+protocol-ID archive is included directly in this GitHub repository under
+`protocols/`, with its project MIT notice; see the [protocol package guide](protocols/README.md).
+It contains memberships and package metadata, not upstream motions, source
+captions or model assets. These ID lists do not grant rights to the source data.
+Users acquire the other five sources from their official providers and process
+them locally. The previously prepared three-source text archive described below
+is retained as a staging alternative, not selected for the initial Hugging Face
+download. Source-licensed issue/reference excerpts in this code repository are
+distinct from a bulk annotation corpus.
 
 The prepared original text download covers HumanML3D, Motion-X and Bandai, with each source identified in its manifest. HumanML3D captions and tokens are inherited from the upstream repository, Copyright (c) 2022 Chuan Guo, under its retained MIT notice in `licenses/HUMANML3D_REPOSITORY_LICENSE.txt`. FineMotion maps the selected source captions to clip IDs; the paper-exact changes only sentence case or final punctuation in selected fields.
 

@@ -1,11 +1,13 @@
 # Bandai release and six-source reconstruction guide
 
 The motion conversion example, text preparation code and benchmark tools are
-available in this repository. The first bulk release is planned for a Hugging
-Face Dataset repository, with Bandai motion/text and a separate frozen-ID
-protocol archive. Other sources are acquired from their official providers and
-processed locally. Hosted links will be added after upload; a package's SHA256
-and repository revision identify its exact version. See the [dataset card draft](../huggingface/README.md).
+available in this repository. The frozen-ID protocol archive is included
+[directly on GitHub](../protocols/README.md). The two larger Bandai motion/text
+and BVH companion archives are hosted in the
+[Hugging Face Dataset](https://huggingface.co/datasets/randong/FineMotion-Style).
+Other sources are acquired from their official providers and processed locally.
+A package's SHA256 and repository revision identify its exact version. See the
+[dataset card](../huggingface/README.md).
 
 ## Selected first-release components
 
@@ -14,14 +16,22 @@ and repository revision identify its exact version. See the [dataset card draft]
   mapping and the BVH-to-SMPL example. Source sequence counts and paired training
   window counts differ. Motion and annotation terms are CC BY-NC 4.0. Full SMPL
   model weights and standalone target templates are obtained separately.
+  [Download the motion/features/text archive from Hugging Face](https://huggingface.co/datasets/randong/FineMotion-Style/resolve/main/finemotion_bandai_original_v1_20261016_en.tar.gz?download=true).
 - **Frozen protocol IDs**: full historical split and benchmark ID lists, with
   original bytes/order and a hash manifest. These contain no source captions or
   motions. They describe membership in the six-source protocol; they do not
   supply the missing source files or a complete source-to-crop conversion ledger.
+  The 292-list archive is available in this repository at
+  `protocols/finemotion_frozen_protocol_v1_20261016.tar.gz`
+  ([direct download](https://github.com/dongran/finemotion-style/raw/refs/heads/main/protocols/finemotion_frozen_protocol_v1_20261016.tar.gz)).
+  Its size is 7,944,168 bytes and SHA256 is
+  `3209df832ac2729e30c1544bf1eb56e954179f4033efeb71a7588b27b4bd1a49`.
+  See the [protocol package guide](../protocols/README.md) for checksum verification.
 - **Bandai BVH companion**: 3,077 original source BVH files and 3,077 matching
   SMPL-derived BVH animation files, with source/sequence/clip mapping and hashes.
   The derived view is a later SMPL-cache export, not the historical MotionBuilder
   output stage. See the [BVH companion guide](BANDAI_BVH_COMPANION.md).
+  [Download the BVH companion from Hugging Face](https://huggingface.co/datasets/randong/FineMotion-Style/resolve/main/finemotion_bandai_bvh_companion_v1_20261016_en.tar.gz?download=true).
 
 ## Retained staging alternatives
 
@@ -46,7 +56,7 @@ files. The Motorica clip is outside that download scope. The author-locked
 eight-example reference identifies that distinction. The selected Bandai-only
 motion/text package contains one of the eight corresponding clip files. The
 eight-example verification JSON documents the previously prepared three-source
-artifact and is not an inventory of the planned Bandai-only download.
+artifact and is not an inventory of the Bandai-only downloads.
 
 ## Historical annotations and the Qwen screen
 

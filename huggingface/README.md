@@ -1,5 +1,5 @@
 ---
-pretty_name: FineMotion-Style — Bandai motion and reconstruction protocols
+pretty_name: FineMotion-Style — Bandai motion and annotations
 language:
 - en
 license: cc-by-nc-4.0
@@ -12,39 +12,46 @@ tags:
 
 # FineMotion-Style
 
-This is the dataset card draft for the planned Hugging Face Dataset release.
-Archives are prepared; no live Hugging Face download is claimed by this draft.
-
 FineMotion-Style accompanies *Learning Kinematic Frequency-Aware Disentanglement
 for Motion Style Transfer and Editing*, SIGGRAPH Asia 2026. The integrated
-research corpus uses six sources. This hosted component distributes **Bandai
-motion and annotations**, plus a separate archive of frozen protocol IDs.
-Other sources are acquired from their official providers and processed locally.
+research corpus uses six sources. This Hugging Face Dataset contains
+the two **Bandai motion/text and BVH companion archives**. Frozen protocol IDs
+are already included in the GitHub code repository. Other sources are acquired
+from their official providers and processed locally.
 
 [Project](https://www.dr-lab.org/projects/kinematic-frequency-motion/) ·
 [Method code](https://github.com/dongran/kinematic-frequency-motion) ·
 [Dataset code and reconstruction guide](https://github.com/dongran/finemotion-style)
 
-## Download components
+## Downloads
 
 The selected components and their SHA256 values are recorded in the
 [archive manifest](https://github.com/dongran/finemotion-style/blob/main/release_metadata/release_archives.json).
 
-- Bandai original v1: 3,077 archived SMPL24 source sequences, 2,676 paired
+- [Bandai original v1 — motion, features and text](https://huggingface.co/datasets/randong/FineMotion-Style/resolve/main/finemotion_bandai_original_v1_20261016_en.tar.gz?download=true): 3,077 archived SMPL24 source sequences, 2,676 paired
   20Hz HumanML263 feature/text clips, source mappings, split projections and
   a complete BVH-to-MotionBuilder-to-SMPL example. The archived source sequences
   use 30Hz; another project can choose a different conversion rate.
-- Frozen protocol v1: 292 original split/benchmark ID lists, with byte hashes
-  and a description of the different full-corpus, availability and benchmark
-  counts. These contain no source captions, motions or model weights.
-- Bandai BVH companion: 3,077 original animation BVH files and 3,077 matching
+- [Bandai BVH companion — native and SMPL-derived views](https://huggingface.co/datasets/randong/FineMotion-Style/resolve/main/finemotion_bandai_bvh_companion_v1_20261016_en.tar.gz?download=true): 3,077 original animation BVH files and 3,077 matching
   SMPL-derived BVH exports, with explicit stage labels and source/clip mapping.
   These later SMPL-derived exports are not the original MotionBuilder output.
 
-The components have different scopes. The protocol IDs refer to all six
-sources; the Bandai download alone does not reconstruct the full research
-corpus. The previously prepared three-source text archive is not selected for
-this initial hosted release.
+These two Bandai archives provide different representations of the same source
+collection; they do not reconstruct the full six-source research corpus. The
+previously prepared three-source text archive is not selected for this initial
+Hugging Face release.
+
+## Frozen protocol IDs on GitHub
+
+The 292 original split/benchmark ID lists are available in the code repository:
+[download the frozen protocol archive](https://github.com/dongran/finemotion-style/raw/refs/heads/main/protocols/finemotion_frozen_protocol_v1_20261016.tar.gz)
+and read its [package guide and checksum instructions](https://github.com/dongran/finemotion-style/blob/main/protocols/README.md).
+The file is 7,944,168 bytes, with SHA256
+`3209df832ac2729e30c1544bf1eb56e954179f4033efeb71a7588b27b4bd1a49`.
+This GitHub package contains frozen memberships and package metadata, with no
+source captions, motions or model weights. Its IDs refer to all six sources;
+the protocol archive is supplied through GitHub separately from the two Hugging
+Face data downloads.
 
 ## Acquiring the other sources
 
@@ -91,7 +98,7 @@ Bandai data and annotations are distributed under **CC BY-NC 4.0**, with source
 attribution, original notices and the transformation history in the archive.
 The source creator is Bandai Namco Research Inc. The conversion uses
 [our 2025 processing method](https://github.com/dongran/tempo-changing-music2motion).
-Project code, documentation and the separate protocol-ID material retain their
+Project code, documentation and the protocol-ID material on GitHub retain their
 MIT notices; the card's data-licence tag does not replace component-specific terms.
 SMPL-Body rig attribution in the BVH view retains its separate CC BY 4.0 terms.
 
