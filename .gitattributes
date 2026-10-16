@@ -13,3 +13,5 @@ examples/** -text whitespace=cr-at-eol
 scripts/text/historical/*.py whitespace=-blank-at-eof
 scripts/reconstruction/historical/*.py whitespace=-blank-at-eof
 scripts/text/semantic_subset_config_v3.py whitespace=-blank-at-eof
+# Recovered FineDance files retain their normalized original EOF bytes.
+scripts/finedance/*.py whitespace=-blank-at-eof

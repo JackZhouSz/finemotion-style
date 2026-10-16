@@ -1,18 +1,31 @@
-# Original text and Bandai release guide
+# Bandai release and six-source reconstruction guide
 
 The motion conversion example, text preparation code and benchmark tools are
-available in this repository. Bulk archives are hosted separately; the download
-links belong in the root README after the files have been uploaded. A package's
-SHA256 file identifies the exact version.
+available in this repository. The first bulk release is planned for a Hugging
+Face Dataset repository, with Bandai motion/text and a separate frozen-ID
+protocol archive. Other sources are acquired from their official providers and
+processed locally. Hosted links will be added after upload; a package's SHA256
+and repository revision identify its exact version. See the [dataset card draft](../huggingface/README.md).
 
-## What each archive represents
+## Selected first-release components
 
 - **Bandai original v1**: 3,077 converted SMPL24 motion sequences, 2,676 paired
   20Hz HumanML263 features and historical text files, frozen splits, source
   mapping and the BVH-to-SMPL example. Source sequence counts and paired training
   window counts differ. Motion and annotation terms are CC BY-NC 4.0. Full SMPL
   model weights and standalone target templates are obtained separately.
-- **Source-scoped original text v1**: HumanML3D 13,186 files, Motion-X 35,998 and
+- **Frozen protocol IDs**: full historical split and benchmark ID lists, with
+  original bytes/order and a hash manifest. These contain no source captions or
+  motions. They describe membership in the six-source protocol; they do not
+  supply the missing source files or a complete source-to-crop conversion ledger.
+
+## Retained staging alternatives
+
+The following text archive was prepared and checked before selecting the
+Bandai-first hosting plan. It remains preserved locally and is **not selected
+for the first Hugging Face upload**:
+
+- **Three-source original text v1**: HumanML3D 13,186 files, Motion-X 35,998 and
   Bandai 2,676, totalling 51,860. The default text view uses the selected
   paper-exact wording; inherited annotations and source-specific licences are
   identified separately. It contains no motion, video or body-model assets.
@@ -21,12 +34,15 @@ SHA256 file identifies the exact version.
   optionally normalizes NaN times as the historical loader did. This is a new
   text/availability view, not a replacement for the saved paper protocol.
 
-The complete six-source technical snapshot has 67,907 texts. The source-scoped
-download is a publication subset, not a claim that the full training pool had
+The complete six-source technical snapshot has 67,907 texts. The prepared
+three-source archive is a subset, not a claim that the full training pool had
 only 51,860 IDs. The complete paper-exact view has eight selected paper
 sentences; the three-source download contains seven corresponding full clip
 files. The Motorica clip is outside that download scope. The author-locked
-eight-example reference identifies that distinction.
+eight-example reference identifies that distinction. The selected Bandai-only
+motion/text package contains one of the eight corresponding clip files. The
+eight-example verification JSON documents the previously prepared three-source
+artifact and is not an inventory of the planned Bandai-only download.
 
 ## Historical annotations and the Qwen screen
 
@@ -45,7 +61,7 @@ check, three proposed Bandai left/right reversals were refuted by SMPL joint
 motion; the original side labels were retained. This is not a measured corpus
 accuracy or training-quality improvement.
 
-## Known production issues
+## Known issues in inherited/reconstructed text
 
 The historical text snapshot retains 44 confirmed pure conversational/refusal
 or grammar-explanation clip captions, two nonzero empty annotation intervals
@@ -92,6 +108,11 @@ dataset path to its physical location before passing it as `--source-root`.
 
 ## Publication scope and source terms
 
+The selected first release redistributes Bandai motion/text. Users obtain the
+other five sources, including original annotations where available, from their
+providers. This is a distribution choice, not a claim that HumanML3D or Motion-X
+annotations cannot be redistributed under their stated terms.
+
 HumanML3D inherited text retains the repository MIT notice. Motion-X expressly
 licenses annotations under CC BY-NC-SA 4.0; adapted token/POS exports retain
 that annotation scope and attribution. Bandai motion and source-label-derived
@@ -104,7 +125,8 @@ establishes that every independently generated factual description is
 prohibited. The present MAIN/DETAILS components, however, use source labels
 and sometimes source theme prose, so their complete annotation redistribution
 scope is not confirmed by the inspected terms alone. Those components are
-kept outside this download as a staging choice.
+kept outside the hosted motion/text component. Publishing local processing code
+does not expand any upstream permission to use, modify or share the source.
 
 The independent processing code, prompt structure, formatter and benchmark
 logic are provided for local use with legitimately acquired source data. The
@@ -124,8 +146,11 @@ Official terms:
 
 1. Obtain source motions and source metadata under each provider's terms.
 2. Follow the [source adapters](SOURCE_RECONSTRUCTION.md) to obtain the paired
-   motion representation. Only the Bandai example is verified end to end here;
-   documented gaps are not replaced by invented conversion scripts.
+   motion representation. The recovered native FineDance converter has CPU
+   synthetic checks. Motorica uses the author-confirmed zero-rotation calibration
+   and MotionBuilder source-character route. Only the Bandai example has a fresh
+   end-to-end verification here; method recovery does not imply every old array
+   has been reproduced byte for byte.
 3. Reproduce the source-label prompt context and video descriptions, or supply
    your own reviewed captions. Use the [MAIN/DETAILS adapter](../scripts/text/caption_fields_to_jsonl.py)
    to export formatter JSONL without changing the sentence.
@@ -137,3 +162,10 @@ Official terms:
 Regeneration with another VLM/model version need not reproduce the archived
 sentences byte for byte. Formatting alone does not supply motion features,
 normalization statistics, a motion model or evaluation checkpoints.
+
+For HumanML3D and Motion-X, start with their official original annotations and
+the saved ID/time mapping. For Bandai, LAFAN1, Motorica and FineDance, the
+historical route uses source-label MAIN context and video-generated DETAILS.
+Use the original frozen IDs and partitions with an explicitly named new text
+version; do not silently rerun caption regexes to replace paper memberships.
+See [frozen IDs and new text versions](BENCHMARK_PROTOCOL.md#frozen-ids-with-regenerated-text).

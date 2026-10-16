@@ -186,5 +186,7 @@
     "Bandai": 2676
   },
   "current_public_text_files": 51860,
-  "current_public_complete_paper_clip_files": 7
+  "current_public_complete_paper_clip_files": 7,
+  "initial_hf_scope_note": "The current_public_* keys below describe the previously prepared three-source archive verification, not a live hosted dataset. The selected initial HF motion/text component is Bandai only; it includes one corresponding full paper clip file. All eight author-locked sentences remain reference documentation.",
+  "initial_hf_complete_paper_clip_files": 1
 }

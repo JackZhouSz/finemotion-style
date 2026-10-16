@@ -287,7 +287,7 @@ def build(
                 [
                     "# FineMotion content subset (lists only)",
                     "",
-                    "当前目录仅包含子集 split 列表（txt），不包含任何数据文件/软链接。",
+                    "This directory contains subset split lists (TXT) only, without data files or symbolic links.",
                     f"source dataset_root: `{dataset_root}`",
                     f"generated_at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
                     "",

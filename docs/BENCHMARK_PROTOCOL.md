@@ -92,3 +92,28 @@ The original feature builder assigns segment IDs using an MD5-derived value of `
 Classifier training exports, style-reference selection and transferred-motion evaluation apply additional availability and sampling steps. Their counts are distinct from the caption taxonomy counts. Example released weights and demonstration settings are not a promise that every saved checkpoint reproduces the final paper metric table. Exact quantitative reproduction requires the relevant selected-ID/pair manifests, evaluator checkpoint and metric settings in addition to these dataset lists.
 
 Caption revisions should ship as a separate text version with accepted old/new fields and hashes. Keep the original text and frozen benchmark lists available. Rerun classification only for an explicitly named new benchmark version.
+
+## Frozen IDs with regenerated text
+
+Users rebuilding from official sources can retain the historical protocol even
+when a VLM generates different sentences:
+
+1. Reconstruct the same source recording, crop and clip-ID mapping. Keep
+   sampling rates and half-open crop intervals explicit. A frozen ID alone does
+   not reconstruct a motion window.
+2. Keep the archived train/validation/test assignments and style/attribute
+   memberships. Report unavailable IDs and the resulting intersection counts;
+   do not invent replacement clips or repartition them.
+3. Give locally generated captions their own text version and record the VLM,
+   prompt, render settings, tokenizer profile, dependencies and file hashes.
+   Literal sentences and POS tokens need not equal the archived annotations.
+4. Evaluate against the frozen benchmark lists when referring to the historical
+   protocol. These remain labels derived from the old caption snapshot; a new
+   caption is not evidence that its words reproduce the old regex decision.
+5. If new captions are used to regenerate class memberships, publish a new
+   benchmark version with its own counts and mappings.
+
+The separate protocol archive contains the frozen ID lists only. Source files,
+source-to-crop ledgers, converted arrays, original full annotations and model
+assets must be obtained or reconstructed separately as described in
+[source reconstruction](SOURCE_RECONSTRUCTION.md).

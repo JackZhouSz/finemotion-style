@@ -1,0 +1,75 @@
+{
+  "scope": "Project-native FineDance NPY to SMPL parameter converter and batch driver only; no upstream implementation, dataset, labels, cached motion, models or weights bundled.",
+  "source_author": "dongran",
+  "source_commit": "7a28f561c35d04964c352a205aca08f7b46b6be8",
+  "source_commit_author_date": "2026-02-09T17:48:50+09:00",
+  "source_commit_subject": "Add FineDance-to-SMPL conversion and preview tools",
+  "files": [
+    {
+      "file": "finedance_to_smpl_npz.py",
+      "original_project_relative_path": "newBVHdata/FineDance_to_smpl/finedance_to_smpl_npz.py",
+      "original_sha256": "26fe83f2f780687dcaa305368ff7164db914580e6fe8d5683829dddeb44e73c7",
+      "public_sha256": "a39c48c731bbcbb36ce47d03b083398a57df2a3029508fc486b508fb3ec8c47c",
+      "original_bytes": 9919,
+      "public_bytes": 9661,
+      "normalization": "CRLF to LF only; no semantic code edits"
+    },
+    {
+      "file": "batch_finedance_motion_to_smpl_npz.py",
+      "original_project_relative_path": "newBVHdata/FineDance_to_smpl/batch_finedance_motion_to_smpl_npz.py",
+      "original_sha256": "5229afbb4530f041fdf308ba64daef7cfeea6109cab69b93be954fb218964039",
+      "public_sha256": "47e4913f3008444720bbd7abf219290c74fc895fe73e50bdc953181635b71199",
+      "original_bytes": 7260,
+      "public_bytes": 7027,
+      "normalization": "CRLF to LF only; no semantic code edits"
+    }
+  ],
+  "algorithm_and_convention_references": [
+    {
+      "title": "FineDance official renderer: native layouts, SMPL hand approximation and display height",
+      "url": "https://github.com/li-ronghui/FineDance/blob/main/render.py"
+    },
+    {
+      "title": "PyTorch3D rotation conversions: Zhou et al. 6D row-basis convention",
+      "url": "https://github.com/facebookresearch/pytorch3d/blob/main/pytorch3d/transforms/rotation_conversions.py"
+    },
+    {
+      "title": "PyTorch3D upstream BSD-style licence",
+      "url": "https://github.com/facebookresearch/pytorch3d/blob/main/LICENSE"
+    },
+    {
+      "title": "Zhou et al., On the Continuity of Rotation Representations in Neural Networks, CVPR2019",
+      "url": "https://arxiv.org/abs/1812.07035"
+    }
+  ],
+  "attribution_note": "These recovered files use a NumPy implementation. Their Git author/commit is recorded; shared mathematical structure or convention is not proof of independent origin of every fragment. No upstream FineDance/PyTorch3D source file is bundled or relicensed. Retain upstream attribution and licence for any separately copied upstream implementation.",
+  "historical_defaults": {
+    "single_hand_mode": "zeros",
+    "batch_hand_mode": "index1",
+    "add_height_y": 0.0,
+    "native_NPZ_fps_metadata": false,
+    "native_NPZ_keys": [
+      "poses",
+      "trans"
+    ]
+  },
+  "historical_cache_exception": {
+    "id": "001",
+    "status": "unresolved historical provenance",
+    "observation": "All stored pose axis-angle components are exact negatives between the raw SMPL cache and the current unified cache, while translation is unchanged. Current unified001 has no FPS key.",
+    "cause_attributed": false,
+    "automatic_patch_provided": false
+  },
+  "source_data_or_dataset_metadata_assets_included": false,
+  "actual_native_data_conversion_validated_against_cache": false,
+  "validation_scope": "Synthetic CPU-only tests are recorded separately; no original native315D sample was located in the searched source/cache roots.",
+  "synthetic_validation": {
+    "status": "passed",
+    "checks_passed": 33,
+    "scope": "CPU synthetic identity and positiveX90 row6D, hand modes, height0,315/319/159/singleton and malformed shapes, overwrite/skip behavior and CLIhelp; no real native dataset converted.",
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "near_pi_accuracy_exhaustively_tested": false,
+    "GPU_or_body_model_calls": 0
+  }
+}

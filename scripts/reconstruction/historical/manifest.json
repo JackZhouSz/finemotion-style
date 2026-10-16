@@ -1,17 +1,20 @@
 {
   "schema_version": 1,
   "prepared_for_release_date_jst": "2026-10-16",
-  "role": "Recovered project motion-conversion code; original layout/write assumptions retained",
+  "role": "Recovered project conversion code: seven byte-identical files, one English-comment/public-filename adaptation and one metadata-loading adaptation.",
   "files": [
     {
       "file": "BVHtoSmpl_LaFAN1.py",
       "original_filename": "PuppetToSmpl_LaFAN1.py",
       "historical_project_relative_path": "datasets/raw/LaFAN1_to_smpl/PuppetToSmpl_LaFAN1.py",
       "original_source_sha256": "aac54fcb6aac61579216571ee69514c52ab26431b41c9341610306ae21c6511e",
-      "sha256": "aac54fcb6aac61579216571ee69514c52ab26431b41c9341610306ae21c6511e",
-      "byte_identity_with_original": true,
-      "filename_only_rename": true,
-      "adaptation": null
+      "sha256": "63460444aa8e7101584973eebe23b9c97501772837875d33c30833574306463f",
+      "byte_identity_with_original": false,
+      "filename_only_rename": false,
+      "adaptation": "Public filename changed to BVHtoSmpl_LaFAN1.py and three Chinese comments translated into English. Executable AST and motion behavior are unchanged.",
+      "public_sha256_before_english_localization": "aac54fcb6aac61579216571ee69514c52ab26431b41c9341610306ae21c6511e",
+      "public_filename_renamed": true,
+      "adaptation_kind": "english_comment_localization_and_public_filename"
     },
     {
       "file": "step3_finalize_npz_LaFAN1.py",
@@ -94,9 +97,9 @@
       "adaptation": null
     }
   ],
-  "unchanged_byte_snapshots": 8,
+  "unchanged_byte_snapshots": 7,
   "metadata_adaptations": 1,
-  "filename_only_renames": 1,
+  "filename_only_renames": 0,
   "attribution": {
     "project_code": "FineMotion processing workspace, copyright Ran Dong; see project LICENSE",
     "shared_bvh_implementation": "tempo-changing-music2motion (2025), imported separately; see licenses/TEMPO_CODE_LICENSE.txt",
@@ -211,5 +214,7 @@
   ],
   "private_urls_found": 0,
   "credential_pattern_candidates": 0,
-  "full_motion_reconstruction_verified": false
+  "full_motion_reconstruction_verified": false,
+  "english_localizations": 1,
+  "public_filename_renames": 1
 }

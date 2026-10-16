@@ -131,7 +131,9 @@
     "final_script_rerun": {
       "status": "ok",
       "same_export_sha256": true,
-      "script_sha256": "48160ccda25879da65fdf39aaae46ebc404fc73a8b2dcd4b07ad50a97b748bab"
+      "script_sha256": "48160ccda25879da65fdf39aaae46ebc404fc73a8b2dcd4b07ad50a97b748bab",
+      "current_public_script_sha256": "29a7bcf98f55f9acbb2d32aabf63d4999cfe05027c57ef184af39e439e2b0707",
+      "english_localization": "The historical executed script hash above is retained. The current public script differs only in two comments translated into English; executable AST is identical. No new MotionBuilder run was performed for localization."
     },
     "fresh_export_sha256": "422be59ffd08f148191cafa324260444085f9460bd9ed0e532b8e179f19f92d2",
     "review": "Five simple source clips inspected; paired GIF/contact sheet checked for gross body inversion, twisting and self-intersection. Visual sanity check, not zero-error certification."

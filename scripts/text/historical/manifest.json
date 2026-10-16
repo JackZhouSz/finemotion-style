@@ -2,15 +2,18 @@
   "schema_version": 1,
   "snapshot_inventory_date": "2026-10-16",
   "project": "FineMotion historical processing",
-  "role": "Six unchanged implementation snapshots and one documented public metadata-loading adaptation. Original private sources remain unchanged.",
+  "role": "Four byte-identical snapshots, two English-localized historical files and one public metadata-loading adaptation. Original private sources remain unchanged.",
   "files": [
     {
       "file": "build_finemotion_content_lists_from_texts.py",
       "historical_project_relative_path": "tools/build_finemotion_content_lists_from_texts.py",
-      "sha256": "55fcb4f9361c7357a104b900f48115093eb8294363f114e2624c22288d0b1071",
-      "unchanged_snapshot": true,
+      "sha256": "eff32d915a902a68897069cf86100b54ef09a2da8a51038fc6b6db516cd1a691",
+      "unchanged_snapshot": false,
       "original_source_sha256": "55fcb4f9361c7357a104b900f48115093eb8294363f114e2624c22288d0b1071",
-      "byte_identity_with_original": true
+      "byte_identity_with_original": false,
+      "public_sha256_before_english_localization": "55fcb4f9361c7357a104b900f48115093eb8294363f114e2624c22288d0b1071",
+      "adaptation_kind": "english_localization",
+      "adaptation": "Translated the generated README explanation into English; classification patterns, source IDs, selection and split algorithms are unchanged."
     },
     {
       "file": "build_splits_sem_v3_1_from_263_texts.py",
@@ -23,10 +26,13 @@
     {
       "file": "semantic_subset_config_v3.py",
       "historical_project_relative_path": "tools/semantic_subset_config_v3.py",
-      "sha256": "837a60d651c6ec05f5d594a73923cdc36f404eb6326da86e25dd347a062d7d0f",
-      "unchanged_snapshot": true,
+      "sha256": "bf87bdfef17dd5c545ccda35768428dfced3d1ab66fafd0324a2255fd3107895",
+      "unchanged_snapshot": false,
       "original_source_sha256": "837a60d651c6ec05f5d594a73923cdc36f404eb6326da86e25dd347a062d7d0f",
-      "byte_identity_with_original": true
+      "byte_identity_with_original": false,
+      "public_sha256_before_english_localization": "837a60d651c6ec05f5d594a73923cdc36f404eb6326da86e25dd347a062d7d0f",
+      "adaptation_kind": "english_localization",
+      "adaptation": "Translated display descriptions into English; legacy desc_zh field names, regex patterns, weights, family keys and algorithms are unchanged."
     },
     {
       "file": "tokenize_humanml_texts_spacy.py",
@@ -61,5 +67,8 @@
       "original_source_sha256": "a37d8ac74258352231e3a7275b76c31b6427b1919871dbf617fa4901751066df",
       "byte_identity_with_original": true
     }
-  ]
+  ],
+  "unchanged_byte_snapshots": 4,
+  "english_localizations": 2,
+  "metadata_adaptations": 1
 }

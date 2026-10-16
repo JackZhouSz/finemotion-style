@@ -58,10 +58,10 @@ MAPPING_JSON = os.path.join(SCRIPT_DIR, "hik_mapping_bandai.json")
 REMOVE_EXTRA_ROOT = True
 EXTRA_ROOT_NAME = "joint_Root"
 
-# 批量处理：留空则处理 bvhForC 下全部 BVH；填入则只处理一个文件名（用于单测）
+# Batch mode: leave empty for all BVHs in bvhForC, or set one filename for testing.
 ONLY_BVH_NAME = CONFIG.get("only_bvh_name", "")
 
-# 如果你想每次跑批量前清空 output 目录，设为 True
+# Set True to clear the output directory before each batch.
 CLEAR_OUTPUT_DIR = False
 
 if not CONFIG.get("smpl_fbx"):

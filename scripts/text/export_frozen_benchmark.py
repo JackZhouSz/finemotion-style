@@ -21,7 +21,7 @@ STYLE_CLASSES = ('impact', 'strike', 'balance', 'tremor')
 CONTENT_CLASSES = ('walk', 'run', 'turn', 'circle')
 ATTRIBUTES = ('periodic', 'secondary_rich')
 PARTITIONS = ('all', 'train', 'val', 'test')
-EXPECTED_TAXONOMY_SHA256 = '837a60d651c6ec05f5d594a73923cdc36f404eb6326da86e25dd347a062d7d0f'
+EXPECTED_TAXONOMY_SHA256 = 'bf87bdfef17dd5c545ccda35768428dfced3d1ab66fafd0324a2255fd3107895'
 
 
 def sha256(path: Path) -> str:

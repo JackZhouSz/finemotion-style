@@ -32,7 +32,7 @@ class Attribute:
 BUCKETS_V3: List[Bucket] = [
     Bucket(
         key="impact",
-        desc_zh="冲击/接触/落地 + 跳跃/弹跳（legacy扩展）（impact/contact/landing/fall/get-up/jump/hop）",
+        desc_zh="Impact/contact/landing + jumping/bouncing (legacy expansion) (impact/contact/landing/fall/get-up/jump/hop)",
         patterns=[
             # original impact/contact/landing
             r"\bimpact\b",
@@ -55,7 +55,7 @@ BUCKETS_V3: List[Bucket] = [
     ),
     Bucket(
         key="strike",
-        desc_zh="打击/搏斗（strike/fight/punch/kick）",
+        desc_zh="Striking/fighting (strike/fight/punch/kick)",
         patterns=[
             r"\b(punch|punches|punching)\b",
             r"\b(kick|kicks|kicking)\b",
@@ -69,7 +69,7 @@ BUCKETS_V3: List[Bucket] = [
     ),
     Bucket(
         key="balance",
-        desc_zh="失衡/恢复/踉跄（balance/recovery/stumble/slip）",
+        desc_zh="Loss of balance/recovery/stumbling (balance/recovery/stumble/slip)",
         patterns=[
             r"\b(balance|unsteady)\b",
             r"\b(lose|loses|losing)\s+balance\b",
@@ -87,7 +87,7 @@ BUCKETS_V3: List[Bucket] = [
     ),
     Bucket(
         key="tremor",
-        desc_zh="抖动/震颤/振动（tremor/shake/jitter）",
+        desc_zh="Shaking/tremor/vibration (tremor/shake/jitter)",
         patterns=[
             r"\b(tremor|tremble|trembling)\b",
             r"\b(shake|shakes|shaking|shaky)\b",
@@ -106,7 +106,7 @@ BUCKETS_V3: List[Bucket] = [
 ATTRIBUTES_V3: List[Attribute] = [
     Attribute(
         key="secondary_rich",
-        desc_zh="并发/多动作线索（secondary-rich / simultaneous actions）",
+        desc_zh="Concurrent/multiple-action cues (secondary-rich / simultaneous actions)",
         patterns=[
             r"\b(while|whilst)\b",
             r"\b(with)\b",
@@ -118,7 +118,7 @@ ATTRIBUTES_V3: List[Attribute] = [
     ),
     Attribute(
         key="periodic",
-        desc_zh="周期性/重复线索（periodic / cyclic / repetitive）",
+        desc_zh="Periodic/repetitive cues (periodic / cyclic / repetitive)",
         patterns=[
             r"\b(repeat|repeats|repeating|repeatedly)\b",
             r"\b(over\s+and\s+over|again\s+and\s+again)\b",

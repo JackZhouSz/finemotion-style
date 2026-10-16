@@ -48,11 +48,11 @@ REPO_ROOT = _find_repo_root(SCRIPT_DIR)
 FOLDER_PATH = os.path.join(SCRIPT_DIR, "bvhForC")  # LaFAN1_to_smpl/bvhForC
 OUTPUT_DIR_NAME = "output"
 
-# 批量处理：留空则处理 bvhForC 下全部 BVH。
-# 如果你想临时只跑一个文件，再填入例如 "walk4_subject1.bvh"
+# Batch mode: leave empty to process every BVH in bvhForC.
+# To test one file, set its filename, for example "walk4_subject1.bvh".
 ONLY_BVH_NAME = ""
 
-# 如果你想每次跑批量前清空 output 目录，设为 True
+# Set True to clear the output directory before each batch.
 CLEAR_OUTPUT_DIR = True
 
 if REPO_ROOT is None:

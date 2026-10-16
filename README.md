@@ -8,9 +8,9 @@ The benchmark integrates CG motion data from multiple sources, focusing on prese
 
 ## Release materials
 
-This repository provides **one complete Bandai Namco conversion example**, the text preparation pipeline, and the frozen benchmark construction rules. A Bandai motion archive and a source-scoped original text package are prepared separately for external downloads. Google Drive and OneDrive links will be added after upload. See the [release guide](docs/RELEASE_V1.md) for versions, source scope and known issues.
+This repository provides **one complete Bandai Namco conversion example**, source reconstruction code, the text preparation pipeline, and frozen benchmark construction rules. The first hosted release is planned for a Hugging Face **Dataset** repository: Bandai motion and text, plus source-independent frozen protocol ID lists. The other five sources are obtained from their official providers and processed locally. See the [release guide](docs/RELEASE_V1.md) for source scope and the [dataset card draft](huggingface/README.md) for the hosting plan. Download links will be added after upload.
 
-Prepared filenames, byte sizes and SHA256 checksums are recorded in the [archive manifest](release_metadata/release_archives.json). The text package contains both the historical paper-exact view and an explicitly derived compatibility view; they are alternatives within the same source subset.
+Prepared filenames, byte sizes, SHA256 checksums and selected/deferred release status are recorded in the [archive manifest](release_metadata/release_archives.json). The previously prepared HumanML3D/Motion-X/Bandai text archive is retained as a staging alternative; it is not selected for the first Hugging Face download.
 
 ![Original Bandai BVH and converted SMPL motion](assets/bandai_wave/bandai_bvh_smpl.gif)
 
@@ -85,7 +85,7 @@ The [benchmark protocol](docs/BENCHMARK_PROTOCOL.md) records the original captio
 
 ## Sources and licenses
 
-Code and documentation are MIT licensed, with retained third-party notices. Bandai source/adapted motion and annotations use **CC BY-NC 4.0**. Inherited HumanML3D text retains its upstream MIT notice; Motion-X annotations and their adaptations retain **CC BY-NC-SA 4.0**. The current public text scope covers these three sources. Other source motions are obtained from their providers; the generated-text scope of LAFAN1, Motorica and FineDance remains separately assessed. This is not a finding that all new descriptions are prohibited. See [NOTICE.md](NOTICE.md), the [release guide](docs/RELEASE_V1.md) and source-specific files in `licenses/`.
+Code and documentation are MIT licensed, with retained third-party notices. The first hosted motion/text component is Bandai under **CC BY-NC 4.0**. Other source motions and original annotations are acquired from their providers. HumanML3D and Motion-X excerpts in the issue/reference metadata retain their upstream MIT and **CC BY-NC-SA 4.0** terms respectively; they are not a bulk download of those corpora. The complete generated-text scope of LAFAN1, Motorica and FineDance remains separately assessed. This is not a finding that all new descriptions are prohibited. See [NOTICE.md](NOTICE.md), the [release guide](docs/RELEASE_V1.md) and source-specific files in `licenses/`.
 
 ## Citation
 
